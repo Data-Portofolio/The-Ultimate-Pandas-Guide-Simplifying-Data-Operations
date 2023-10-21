@@ -1,6 +1,7 @@
 
 <h1 align="center">
 <p align="center">  The Ultimate Pandas Guide: Simplifying Data Operations
+   
 <br>
     <br>
 <!-- PROJECT LOGO -->
@@ -9,7 +10,7 @@
   <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=DDF4CBF9&background=1F25E6D0&center=true&vCenter=true&random=false&width=435&lines=A+Simple+Pandas+DataFrame+CheatSheet" alt="Typing SVG" /></a>
   </kbd>
   <p align='center'>
-    <a href='https://github.com/Data-Portofolio/Analyzing-eCommerce-Business-Performance-with-SQL'>
+    <a href='https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations'>
         <img alt='total stars' title='Total stars on This Project' src='https://custom-icon-badges.herokuapp.com/badge/dynamic/json?logo=star&color=5&labelColor=488207&label=Stars&style=for-the-badge&query=%24.stars&url=https://api.github-star-counter.workers.dev/user/Data-Portofolio'/>
      <a href='https://github.com/astutir'>
         <img alt='Follow Me on GitHub' title='Follow Me on GitHub' src='https://custom-icon-badges.herokuapp.com/github/followers/astutir?style=for-the-badge&&label=GitHub&logo=Github&color=pink'/>
