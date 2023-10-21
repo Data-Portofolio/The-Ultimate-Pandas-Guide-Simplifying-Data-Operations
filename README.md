@@ -28,6 +28,9 @@ Welcome to My repository! This comprehensive guide serves as your key to masteri
 
 Pandas is a go-to library for data manipulation, analysis, and transformation. However, its rich set of functions can be intimidating for beginners. This guide is designed to make your journey with Pandas both accessible and enjoyable. It offers a hands-on approach, packed with practical tips, tricks, and real-world examples to help you become proficient in using Pandas for a wide range of tasks.
 
+# Make DataFrame
+- `pd.DataFrame()`: function in Pandas allows you to create a DataFrame by specifying the data and various parameters. 
+
 ```python
 import pandas as pd
 
