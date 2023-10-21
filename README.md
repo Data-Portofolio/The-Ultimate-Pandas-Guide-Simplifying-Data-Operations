@@ -1,11 +1,12 @@
 
 <h1 align="center">
 <p align="center">  The Ultimate Pandas Guide: Simplifying Data Operations
-    
+<br>
+    <br>
 <!-- PROJECT LOGO -->
-   
+
   <kbd>
-    <a style="border:10px white" href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains&size=22&duration=3500&pause=1000&color=green&center=true&vCenter=true&background=grey&width=450&lines=A+Cheatsheet+Project+about+Pandas" alt="Typing SVG" /></a>
+  <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=DDF4CBF9&background=1F25E6D0&center=true&vCenter=true&random=false&width=435&lines=A+Simple+Pandas+DataFrame+CheatSheet" alt="Typing SVG" /></a>
   </kbd>
   <p align='center'>
     <a href='https://github.com/Data-Portofolio/Analyzing-eCommerce-Business-Performance-with-SQL'>
