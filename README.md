@@ -5,7 +5,7 @@
 <!-- PROJECT LOGO -->
    
   <kbd>
-    <a style="border:10px white" href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains&size=22&duration=3500&pause=1000&color=red&center=true&vCenter=true&background=red&width=450&lines=A+Cheatsheet+Project+about+Pandas" alt="Typing SVG" /></a>
+    <a style="border:10px white" href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=JetBrains&size=22&duration=3500&pause=1000&color=green&center=true&vCenter=true&background=grey&width=450&lines=A+Cheatsheet+Project+about+Pandas" alt="Typing SVG" /></a>
   </kbd>
   <p align='center'>
     <a href='https://github.com/Data-Portofolio/Analyzing-eCommerce-Business-Performance-with-SQL'>
