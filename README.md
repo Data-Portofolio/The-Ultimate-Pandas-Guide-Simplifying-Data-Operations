@@ -58,7 +58,7 @@ Pandas is a go-to library for data manipulation, analysis, and transformation. H
 **Data Filling and Replacement:**
 =========================
 30. **df.fillna()**: Fill missing values with policies you define.
-31. **df.replace()**: Replace values with new ones as per your requirements.
+31. **df.replace(to_replace, value)**: Replace values with new ones as per your requirements.
 
 **String Operations (on string-type columns):**
 =========================
@@ -88,7 +88,32 @@ Pandas is a go-to library for data manipulation, analysis, and transformation. H
 =========================
 53. **df['column'].dt.year**: Peek at the year effortlessly from a datetime column.
 54. **df['column'].dt.month**: Dip your fingers to unearth the month from datetime data.
+55. **df['column'].dt.day**: Extracts the day component from the datetime column.
+56. **df['column'].dt.hour**: Extracts the hour component from the datetime column.
+57. **df['column'].dt.minute**: Extracts the minute component from the datetime column.
+58. **df['column'].dt.second**: Extracts the second component from the datetime column.
+59. **df['column'].dt.microsecond**: Extracts the microsecond component from the datetime column.
+60. **df['column'].dt.date**: Extracts the date component (without the time) from the datetime column.
+61. **df['column'].dt.time**: Extracts the time component (without the date) from the datetime column.
+62. **df['column'].dt.dayofweek**: Returns the day of the week as an integer, where Monday is 0 and Sunday is 6.
+63. **df['column'].dt.day_name()**: Returns the day of the week as a string (e.g., 'Monday', 'Tuesday').
+64. **df['column'].dt.is_month_start**: Returns a Boolean indicating if the date is the start of the month.
+65. **df['column'].dt.is_month_end**: Returns a Boolean indicating if the date is the end of the month.
+66. **df['column'].dt.is_year_start**: Returns a Boolean indicating if the date is the start of the year.
+67. **df['column'].dt.is_year_end**: Returns a Boolean indicating if the date is the end of the year.
+68. **df['column'].dt.dayofyear**: Returns the day of the year as an integer.
+69. **df['column'].dt.week**: Returns the week number of the year.
+70. **df['column'].dt.weekday**: Returns the day of the week as an integer, where Monday is 0 and Sunday is 6.
+71. **df['column'].dt.quarter**: Returns the quarter of the year as an integer (1-4).
+72. **df['column'].dt.to_period('M')**: Converts the datetime to a period with a specified frequency (e.g., 'M' for monthly).
+73. **df['column'].dt.to_period('D')**: Converts the datetime to a period with a daily frequency.
+74. **df['column'].dt.strftime('format_string')**: Allows you to format the datetime as a string using a custom format.
 
-**Value Replacement:**
-=========================
-55. **df.replace(to_replace, value)**: Replace old values with new ones and witness the change in your DataFrame.
+**Converting Column Data Types in Pandas**
+===========================
+- `df['column_name'] = df['column_name'].astype('int64')`
+- `df['date_column'] = pd.to_datetime(df['date_column'])`
+- `df['category_column'] = df['category_column'].astype('category')`
+- `df['numeric_column'] = pd.to_numeric(df['numeric_column'], errors='coerce')`
+- `df['boolean_column'] = df['boolean_column'].astype(bool)`
+- `df['string_column'] = df['string_column'].astype(str)`
