@@ -28,6 +28,27 @@ Welcome to My repository! This comprehensive guide serves as your key to masteri
 
 Pandas is a go-to library for data manipulation, analysis, and transformation. However, its rich set of functions can be intimidating for beginners. This guide is designed to make your journey with Pandas both accessible and enjoyable. It offers a hands-on approach, packed with practical tips, tricks, and real-world examples to help you become proficient in using Pandas for a wide range of tasks.
 
+```python
+import pandas as pd
+
+# Sample data
+data = {'ProductID': [101, 102, 103, 104],
+        'ProductName': ['Laptop', 'Tablet', 'Phone', 'Printer'],
+        'Price': [999.99, 299.99, 499.99, 149.99]}
+
+# Define the row index and column names
+index_labels = ['A', 'B', 'C', 'D']
+column_names = ['ProductID', 'ProductName', 'Price']
+
+# Create the DataFrame
+df = pd.DataFrame(data, index=index_labels, columns=column_names)
+
+# Display the DataFrame
+print(df)
+```
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/44e51992-b36b-4a8d-93af-6436d597301a)
+
+
 **Read and Write Data:**
 =========================
 
@@ -194,6 +215,9 @@ print("\nWeekends:")
 print(weekends_df)
 
 ```
+#### output:
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/a499499c-33a0-4751-ae5c-ab85061a3cd5)
+
 
 **Converting Column Data Types in Pandas**
 ===========================
