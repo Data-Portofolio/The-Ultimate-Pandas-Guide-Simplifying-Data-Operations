@@ -64,12 +64,31 @@ Pandas is a go-to library for data manipulation, analysis, and transformation. H
 =========================
 32. **df['column'].str.upper()**: Elevate all letters to uppercase!
 33. **df['column'].str.contains()**: Unearth patterns in text with df['column'].str.contains().
+34. **df['column'].str.title()**: Capitalize the first letter of each word in the string.
+35. **df['column'].str.capitalize()**: Capitalize the first letter of the string.
+36. **df['column'].str.swapcase()**: Swap the case of each character (e.g., "aBc" becomes "AbC").
+37. **df['column'].str.strip()**: Remove leading and trailing whitespace.
+38. **df['column'].str.lstrip()**: Remove leading whitespace.
+39. **df['column'].str.rstrip()**: Remove trailing whitespace.
+40. **df['column'].str.strip('char')**: Remove specific characters from the start and end.
+41. **df['column'].str.lstrip('char')**: Remove specific characters from the start.
+42. **df['column'].str.rstrip('char')**: Remove specific characters from the end.
+43. **df['column'].str.len()**: Calculate the length (number of characters) of each string.
+44. **df['column'].str.slice(start, stop)**: Extract a substring based on the specified start and stop positions.
+45. **df['column'].str.replace(old, new)**: Replace a substring with a new value.
+46. **df['column'].str.replace(r'pattern', new)**: Replace substrings based on a regular expression pattern.
+47. **df['column'].str.contains('substring')**: Check if a string contains a specific substring and returns a boolean.
+48. **df['column'].str.startswith('prefix')**: Check if a string starts with a specific prefix and returns a boolean.
+49. **df['column'].str.endswith('suffix')**: Check if a string ends with a specific suffix and returns a boolean.
+50. **df['column'].str.split('delimiter')**: Split a string into a list of substrings based on a delimiter.
+51. **df['column'].str.join('separator')**: Join a list of strings with a specified separator.
+52. **df['column'].str.cat(sep='separator')**: Concatenate strings within a column, separated by a specified separator.
 
 **Datetime Operations (on datetime-type columns):**
 =========================
-34. **df['column'].dt.year**: Peek at the year effortlessly from a datetime column.
-35. **df['column'].dt.month**: Dip your fingers to unearth the month from datetime data.
+53. **df['column'].dt.year**: Peek at the year effortlessly from a datetime column.
+54. **df['column'].dt.month**: Dip your fingers to unearth the month from datetime data.
 
 **Value Replacement:**
 =========================
-36. **df.replace(to_replace, value)**: Replace old values with new ones and witness the change in your DataFrame.
+55. **df.replace(to_replace, value)**: Replace old values with new ones and witness the change in your DataFrame.
