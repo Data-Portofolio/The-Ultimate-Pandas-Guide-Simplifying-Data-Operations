@@ -1,6 +1,6 @@
 
 <h1 align="center">
-<p align="center">  Unlocking Pandas A User Friendly: Guide to Data Operations
+<p align="center">  Unlocking Pandas: A User Friendly Guide to Data Operations
     
 <!-- PROJECT LOGO -->
    
