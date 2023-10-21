@@ -1,6 +1,6 @@
 
 <h1 align="center">
-<p align="center">  Unlocking Pandas: A User Friendly Guide to Data 
+<p align="center">  The Ultimate Pandas Guide: Simplifying Data Operations
     
 <!-- PROJECT LOGO -->
    
@@ -20,7 +20,7 @@
 
  </h1>
 
-Welcome to the "Unlocking Pandas" repository! This comprehensive guide serves as your key to mastering the powerful Pandas library, simplifying data operations, and unleashing the full potential of your data analysis tasks.
+Welcome to My repository! This comprehensive guide serves as your key to mastering the powerful Pandas library, simplifying data operations, and unleashing the full potential of your data analysis tasks.
 
 **About This Guide:**
 
