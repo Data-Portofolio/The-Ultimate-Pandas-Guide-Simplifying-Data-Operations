@@ -130,6 +130,70 @@ Pandas is a go-to library for data manipulation, analysis, and transformation. H
 73. **df['column'].dt.to_period('D')**: Converts the datetime to a period with a daily frequency.
 74. **df['column'].dt.strftime('format_string')**: Allows you to format the datetime as a string using a custom format.
 
+### Example 1:
+
+```python
+import pandas as pd
+
+# Sample DataFrame with datetime data
+data = {
+    'date_column': ['2023-01-01', '2023-02-15', '2023-03-20', '2023-04-10'],
+    'value': [100, 150, 200, 250]
+}
+df = pd.DataFrame(data)
+
+# Example 1: Date Parsing and Conversion
+df['date_column'] = pd.to_datetime(df['date_column'])
+
+# Example 2: Date Extraction
+df['year'] = df['date_column'].dt.year
+df['month'] = df['date_column'].dt.month
+df['day'] = df['date_column'].dt.day
+
+# Example 3: Resampling (Monthly Sum)
+monthly_data = df.set_index('date_column').resample('M').sum()
+
+# Example 4: Time Difference Calculation
+df['days_since_event'] = (df['date_column'] - pd.to_datetime('2023-01-01')).dt.days
+
+# Example 5: Date Range Generation
+date_range = pd.date_range(start='2023-01-01', end='2023-12-31', freq='D')
+
+# Example 6: Offset by 10 days
+df['date_column_offset_10_days'] = df['date_column'] + pd.DateOffset(days=10)
+
+# Example 7: Offset by 2 months
+df['date_column_offset_2_months'] = df['date_column'] + pd.DateOffset(months=2)
+
+```
+### Example 2
+```python
+import pandas as pd
+
+# Sample DataFrame with datetime data
+data = {
+    'date_column': ['2023-01-01', '2023-02-15', '2023-03-20', '2023-04-10'],
+}
+df = pd.DataFrame(data)
+df['date_column'] = pd.to_datetime(df['date_column'])
+
+# Extract the day of the week (0 = Monday, 6 = Sunday)
+df['day_of_week'] = df['date_column'].dt.dayofweek
+
+# Filter for weekdays (Monday to Friday, day_of_week 0 to 4)
+weekdays_df = df[df['day_of_week'].isin([0, 1, 2, 3, 4])]
+
+# Filter for weekends (Saturday and Sunday, day_of_week 5 and 6)
+weekends_df = df[df['day_of_week'].isin([5, 6])]
+
+# Print the results
+print("Weekdays:")
+print(weekdays_df)
+print("\nWeekends:")
+print(weekends_df)
+
+```
+
 **Converting Column Data Types in Pandas**
 ===========================
 - `df['column_name'] = df['column_name'].astype('int64')`
