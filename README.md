@@ -77,6 +77,24 @@ print(df)
 =========================
 14. **df['column']**: Pick and extract the necessary column from the DataFrame.
 15. **df[['column1', 'column2']]**: Bundle your data by selecting multiple columns at once.
+   ```
+   import pandas as pd
+
+# Create a DataFrame
+data = {'Nama': ['Alice', 'Bob', 'Charlie', 'David'],
+        'Usia': [25, 30, 35, 28],
+        'Kota': ['Jakarta', 'Surabaya', 'Bandung', 'Medan']}
+
+df = pd.DataFrame(data)
+
+# Display specific columns using .head()
+result = df[['Nama', 'Usia']].head()
+
+# Print the result
+print(result)
+   ```
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/11c7a992-8eeb-4f98-9eee-16016bf344fb)
+
 16. **df.loc[]**: Perform selection based on row and column labels.
 17. **df.iloc[]**: Execute selection based on row and column indices.
 
