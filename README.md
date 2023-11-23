@@ -56,10 +56,32 @@ print(df)
 =========================
 
 1. **pd.read_csv()**: Explore the world of data with ease! Read data from a CSV file and convert it into a DataFrame.
-2. **pd.read_excel()**: Bring the world of spreadsheets into your DataFrame with pd.read_excel().
-3. **df.to_csv()**: Save your analysis results back to a shareable CSV format.
-4. **df.to_excel()**: Showcase your hard work in a neatly formatted Excel file.
-5. **df.to_sql()**: Let Pandas assist you in saving your DataFrame to your SQL database.
+```
+import pandas as pd
+
+# Contoh: Membaca file CSV dengan delimiter (pemisah) titik koma, membatasi kolom, dan menangani tanggal
+file_path = 'path/to/your/another_file.csv'
+
+# Membaca CSV dengan menggunakan titik koma sebagai delimiter, membatasi kolom, dan menangani tanggal
+df = pd.read_csv(file_path, sep=';', skiprows=2, parse_dates=['Tanggal'], na_values='Not Available', usecols=['Tanggal', 'Column1', 'Column2'])
+
+# Menampilkan lima baris pertama dari DataFrame
+print(df.head())
+```
+Tentu, mari tambahkan penjelasan ke dalam contoh kode tersebut:
+
+**_Penjelasan:_**
+
+- `sep=';'`: Menggunakan titik koma (`;`) sebagai delimiter dalam file CSV.
+- `skiprows=2`: Mengabaikan dua baris pertama dalam file CSV.
+- `parse_dates=['Tanggal']`: Mengonversi kolom 'Tanggal' menjadi tipe data datetime.
+- `na_values='Not Available'`: Menggantikan nilai 'Not Available' dengan nilai NaN untuk menangani nilai yang hilang.
+- `usecols=['Tanggal', 'Column1', 'Column2']`: Membatasi pembacaan hanya pada kolom-kolom yang disebutkan dalam daftar tersebut.
+  
+3. **pd.read_excel()**: Bring the world of spreadsheets into your DataFrame with pd.read_excel().
+4. **df.to_csv()**: Save your analysis results back to a shareable CSV format.
+5. **df.to_excel()**: Showcase your hard work in a neatly formatted Excel file.
+6. **df.to_sql()**: Let Pandas assist you in saving your DataFrame to your SQL database.
 
 **Info and Statistics:**
 =========================
