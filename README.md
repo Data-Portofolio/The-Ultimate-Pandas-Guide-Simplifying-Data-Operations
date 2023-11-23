@@ -255,6 +255,8 @@ print(result_filtered)
 print("\nDataFrame setelah ditulis ke CSV dan dibaca kembali:")
 print(df_from_csv)
 ```
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/29178fdc-b1fa-4665-92b4-54253088d800)
+
 **Data Manipulation:**
 =========================
 - **df.drop()**: Easily remove unwanted columns or rows.
