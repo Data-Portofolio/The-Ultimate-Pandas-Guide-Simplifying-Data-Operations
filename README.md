@@ -119,6 +119,81 @@ print(result)
 28. **df.join()**: Merge with another DataFrame to intelligently combine information.
 29. **pd.concat()**: Powerfully combine multiple DataFrames into one.
 
+Dalam Pandas, terdapat beberapa metode untuk menggabungkan atau menggabungkan dua DataFrames. Berikut adalah perbedaan antara tiga metode utama: `merge`, `concat`, dan `join`.
+
+1. **`merge`:**
+   - `merge` digunakan ketika kita ingin menggabungkan DataFrames berdasarkan nilai-nilai tertentu dalam kolom-kolom tertentu (seperti bergabung berdasarkan kolom kunci).
+   - Secara default, `merge` menggunakan tipe gabungan "inner join" (gabungan dalam) di mana hanya nilai-nilai yang cocok di kedua DataFrames yang akan disertakan.
+   - Contoh:
+
+    ```python
+    import pandas as pd
+
+    df1 = pd.DataFrame({'key': ['A', 'B', 'C'], 'value': [1, 2, 3]})
+    df2 = pd.DataFrame({'key': ['A', 'B', 'D'], 'value': [4, 5, 6]})
+
+    merged_df = pd.merge(df1, df2, on='key', how='inner')
+    print(merged_df)
+    ```
+
+    Outputnya:
+
+    ```
+      key  value_x  value_y
+    0   A        1        4
+    1   B        2        5
+    ```
+
+2. **`concat`:**
+   - `concat` digunakan untuk menggabungkan DataFrames secara vertikal (menambahkan baris) atau secara horizontal (menambahkan kolom).
+   - Secara default, `concat` melakukan penggabungan secara vertikal (axis=0).
+   - Contoh:
+
+    ```python
+    import pandas as pd
+
+    df1 = pd.DataFrame({'A': [1, 2], 'B': [3, 4]})
+    df2 = pd.DataFrame({'A': [5, 6], 'B': [7, 8]})
+
+    concatenated_df = pd.concat([df1, df2], axis=0)
+    print(concatenated_df)
+    ```
+
+    Outputnya:
+
+    ```
+       A  B
+    0  1  3
+    1  2  4
+    0  5  7
+    1  6  8
+    ```
+
+3. **`join`:**
+   - `join` digunakan untuk menggabungkan DataFrames berdasarkan indeks mereka.
+   - Secara default, `join` menggunakan tipe gabungan "left join" (gabungan kiri), yang akan menggabungkan semua indeks dari DataFrame pertama dan nilai-nilai yang cocok dari DataFrame kedua.
+   - Contoh:
+
+    ```python
+    import pandas as pd
+
+    df1 = pd.DataFrame({'A': [1, 2], 'B': [3, 4]}, index=['X', 'Y'])
+    df2 = pd.DataFrame({'C': [5, 6], 'D': [7, 8]}, index=['X', 'Z'])
+
+    joined_df = df1.join(df2, how='left')
+    print(joined_df)
+    ```
+
+    Outputnya:
+
+    ```
+       A  B    C    D
+    X  1  3  5.0  7.0
+    Y  2  4  NaN  NaN
+    ```
+
+**_Ringkasan_**: `merge` digunakan untuk menggabungkan berdasarkan kolom, `concat` untuk menggabungkan secara vertikal atau horizontal, dan `join` untuk menggabungkan berdasarkan indeks. Pilihan metode tergantung pada kebutuhan spesifik analisis Anda.
+
 **Data Filling and Replacement:**
 =========================
 30. **df.fillna()**: Fill missing values with policies you define.
