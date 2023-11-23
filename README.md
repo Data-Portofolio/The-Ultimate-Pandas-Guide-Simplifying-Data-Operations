@@ -153,18 +153,18 @@ print(df.head())
    ```
    import pandas as pd
 
-# Create a DataFrame
-data = {'Nama': ['Alice', 'Bob', 'Charlie', 'David'],
+   # Create a DataFrame
+   data = {'Nama': ['Alice', 'Bob', 'Charlie', 'David'],
         'Usia': [25, 30, 35, 28],
         'Kota': ['Jakarta', 'Surabaya', 'Bandung', 'Medan']}
 
-df = pd.DataFrame(data)
+   df = pd.DataFrame(data)
 
-# Display specific columns using .head()
-result = df[['Nama', 'Usia']].head()
+   # Display specific columns using .head()
+   result = df[['Nama', 'Usia']].head()
 
-# Print the result
-print(result)
+   # Print the result
+   print(result)
    ```
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/11c7a992-8eeb-4f98-9eee-16016bf344fb)
 
