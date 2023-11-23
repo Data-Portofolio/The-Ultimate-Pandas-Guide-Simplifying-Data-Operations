@@ -151,29 +151,77 @@ print(df.head())
 =========================
 - **df['column']**: Pick and extract the necessary column from the DataFrame.
 - **df[['column1', 'column2']]**: Bundle your data by selecting multiple columns at once.
-  
-   ```python
-   import pandas as pd
 
-   # Create a DataFrame
-   data = {'Nama': ['Alice', 'Bob', 'Charlie', 'David'],
+_Contoh:_
+```python
+import pandas as pd
+
+# Create a DataFrame
+data = {'Nama': ['Alice', 'Bob', 'Charlie', 'David'],
         'Usia': [25, 30, 35, 28],
-        'Kota': ['Jakarta', 'Surabaya', 'Bandung', 'Medan']}
+        'Kota': ['Jakarta', 'Surabaya', 'Bandung', 'Medan'],
+        'Pekerjaan': ['Guru', 'Dokter', 'Insinyur', 'Desainer']}
 
-   df = pd.DataFrame(data)
+df = pd.DataFrame(data)
 
-   # Display specific columns using .head()
-   result = df[['Nama', 'Usia']].head()
+# Definisi fungsi untuk menentukan status
+def determine_status(row):
+    if row['Usia'] >= 30:
+        return 'Dewasa'
+    elif row['Usia'] < 30 and row['Pekerjaan'] != 'Dokter':
+        return 'Muda'
+    else:
+        return 'Undefined'
 
-   # Print the result
-   print(result)
-   ```
-![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/11c7a992-8eeb-4f98-9eee-16016bf344fb)
+# Menambahkan kolom baru berdasarkan fungsi
+df['Status'] = df.apply(lambda row: determine_status(row), axis=1)
+
+# Menampilkan data yang memenuhi kriteria tertentu
+result_complex_filter = df[(df['Usia'] > 25) & (df['Pekerjaan'] == 'Dokter')]
+
+# Menampilkan hasil
+print("DataFrame Asli:")
+print(df)
+print("\nDataFrame setelah filter yang kompleks:")
+print(result_complex_filter)
+```
+
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/b1c999cf-6b51-4ec9-948b-5f174e2e0671)
+
 
 - **df.loc[]**: Perform selection based on row and column labels.
 - **df.iloc[]**: Execute selection based on row and column indices.
 
+_Contoh:_
 
+```python
+import pandas as pd
+
+# Create a DataFrame
+data = {'Nama': ['Alice', 'Bob', 'Charlie', 'David'],
+        'Usia': [25, 30, 35, 28],
+        'Kota': ['Jakarta', 'Surabaya', 'Bandung', 'Medan'],
+        'Pekerjaan': ['Guru', 'Dokter', 'Insinyur', 'Dokter']}
+
+df = pd.DataFrame(data)
+
+# Seleksi kompleks dengan df.loc[]
+result_loc = df.loc[(df['Usia'] > 25) & (df['Pekerjaan'] == 'Dokter'), ['Nama', 'Usia', 'Kota']]
+
+# Seleksi kompleks dengan df.iloc[]
+result_iloc = df.iloc[(df['Usia'] > 25).index & (df['Pekerjaan'] == 'Dokter').index, [0, 1, 2]]
+
+# Menampilkan hasil
+print("DataFrame Asli:")
+print(df)
+print("\nDataFrame hasil seleksi menggunakan df.loc[]:")
+print(result_loc)
+print("\nDataFrame hasil seleksi menggunakan df.iloc[]:")
+print(result_iloc)
+```
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/c32fcb4c-e25a-4aeb-bc80-acafad31c503)
+
+---
 ```python
 import pandas as pd
 
