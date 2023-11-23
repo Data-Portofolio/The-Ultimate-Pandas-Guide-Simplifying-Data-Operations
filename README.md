@@ -93,10 +93,63 @@ print(df.head())
 12. **df.dtypes**: Use dtypes to reveal the secrets of column data types.
 13. **df.isnull()**: Let Pandas unveil the places where your data is missing.
 
+**Categorical Data Info:**
+=========================
+
+14. **`df.unique()`**: Metode ini digunakan untuk mendapatkan nilai unik dari suatu Series (kolom dalam DataFrame). Ini memberikan daftar nilai yang berbeda dari kolom tersebut.
+
+    Contoh:
+
+    ```python
+    unique_values = df['Category'].unique()
+    print("Unique values in 'Category' column:", unique_values)
+    ```
+
+    Outputnya:
+
+    ```
+    Unique values in 'Category' column: ['A' 'B' 'C']
+    ```
+
+15. **`df.nunique()`**: Metode ini mengembalikan jumlah nilai unik dalam suatu Series. Ini memberikan informasi tentang seberapa bervariasinya data dalam kolom.
+
+    Contoh:
+
+    ```python
+    num_unique_values = df['Category'].nunique()
+    print("Number of unique values in 'Category' column:", num_unique_values)
+    ```
+
+    Outputnya:
+
+    ```
+    Number of unique values in 'Category' column: 3
+    ```
+
+16. **`df.value_counts()`**: Metode ini menghitung frekuensi masing-masing nilai dalam suatu Series. Ini memberikan wawasan tentang seberapa sering masing-masing nilai muncul dalam data.
+
+    Contoh:
+
+    ```python
+    value_counts = df['Category'].value_counts()
+    print("Value counts for each unique value in 'Category' column:")
+    print(value_counts)
+    ```
+
+    Outputnya:
+
+    ```
+    Value counts for each unique value in 'Category' column:
+    A    3
+    B    2
+    C    1
+    Name: Category, dtype: int64
+    ```
+
 **Data Selection:**
 =========================
-14. **df['column']**: Pick and extract the necessary column from the DataFrame.
-15. **df[['column1', 'column2']]**: Bundle your data by selecting multiple columns at once.
+17. **df['column']**: Pick and extract the necessary column from the DataFrame.
+18. **df[['column1', 'column2']]**: Bundle your data by selecting multiple columns at once.
    ```
    import pandas as pd
 
@@ -115,33 +168,33 @@ print(result)
    ```
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/11c7a992-8eeb-4f98-9eee-16016bf344fb)
 
-16. **df.loc[]**: Perform selection based on row and column labels.
-17. **df.iloc[]**: Execute selection based on row and column indices.
+19. **df.loc[]**: Perform selection based on row and column labels.
+20. **df.iloc[]**: Execute selection based on row and column indices.
 
 **Data Manipulation:**
 =========================
-18. **df.drop()**: Easily remove unwanted columns or rows.
-19. **df.rename()**: Personalize your DataFrame by changing column or index names.
-20. **df.set_index()**: Give your DataFrame the index that suits you.
-21. **df.reset_index()**: Reset the index and reorganize your DataFrame to its original state.
-22. **df.sort_values()**: Use sort_values() to arrange data as you desire.
+21. **df.drop()**: Easily remove unwanted columns or rows.
+22. **df.rename()**: Personalize your DataFrame by changing column or index names.
+23. **df.set_index()**: Give your DataFrame the index that suits you.
+24. **df.reset_index()**: Reset the index and reorganize your DataFrame to its original state.
+25. **df.sort_values()**: Use sort_values() to arrange data as you desire.
 
 **Aggregation and Grouping:**
 =========================
-23. **df.groupby()**: Create groups based on specific columns to perform aggregation operations.
-24. **df.agg()**: Let Pandas extract the information you need from grouped data.
-25. **df.pivot()**: Present your data in a beautiful pivot format.
-26. **df.melt()**: Transform data into a long format and discover the pattern.
+26. **df.groupby()**: Create groups based on specific columns to perform aggregation operations.
+27. **df.agg()**: Let Pandas extract the information you need from grouped data.
+28. **df.pivot()**: Present your data in a beautiful pivot format.
+29. **df.melt()**: Transform data into a long format and discover the pattern.
 
 **Merging and Joining:**
 =========================
-27. **df.merge()**: Intuitively combine DataFrames with ease.
-28. **df.join()**: Merge with another DataFrame to intelligently combine information.
-29. **pd.concat()**: Powerfully combine multiple DataFrames into one.
+30. **df.merge()**: Intuitively combine DataFrames with ease.
+31. **df.join()**: Merge with another DataFrame to intelligently combine information.
+32. **pd.concat()**: Powerfully combine multiple DataFrames into one.
 
 Dalam Pandas, terdapat beberapa metode untuk menggabungkan atau menggabungkan dua DataFrames. Berikut adalah perbedaan antara tiga metode utama: `merge`, `concat`, dan `join`.
 
-1. **`merge`:**
+A. **`merge`:**
    - `merge` digunakan ketika kita ingin menggabungkan DataFrames berdasarkan nilai-nilai tertentu dalam kolom-kolom tertentu (seperti bergabung berdasarkan kolom kunci).
    - Secara default, `merge` menggunakan tipe gabungan "inner join" (gabungan dalam) di mana hanya nilai-nilai yang cocok di kedua DataFrames yang akan disertakan.
    - Contoh:
@@ -164,7 +217,7 @@ Dalam Pandas, terdapat beberapa metode untuk menggabungkan atau menggabungkan du
     1   B        2        5
     ```
 
-2. **`concat`:**
+B. **`concat`:**
    - `concat` digunakan untuk menggabungkan DataFrames secara vertikal (menambahkan baris) atau secara horizontal (menambahkan kolom).
    - Secara default, `concat` melakukan penggabungan secara vertikal (axis=0).
    - Contoh:
@@ -189,7 +242,7 @@ Dalam Pandas, terdapat beberapa metode untuk menggabungkan atau menggabungkan du
     1  6  8
     ```
 
-3. **`join`:**
+C. **`join`:**
    - `join` digunakan untuk menggabungkan DataFrames berdasarkan indeks mereka.
    - Secara default, `join` menggunakan tipe gabungan "left join" (gabungan kiri), yang akan menggabungkan semua indeks dari DataFrame pertama dan nilai-nilai yang cocok dari DataFrame kedua.
    - Contoh:
@@ -216,57 +269,57 @@ Dalam Pandas, terdapat beberapa metode untuk menggabungkan atau menggabungkan du
 
 **Data Filling and Replacement:**
 =========================
-30. **df.fillna()**: Fill missing values with policies you define.
-31. **df.replace(to_replace, value)**: Replace values with new ones as per your requirements.
+33. **df.fillna()**: Fill missing values with policies you define.
+34. **df.replace(to_replace, value)**: Replace values with new ones as per your requirements.
 
 **String Operations (on string-type columns):**
 =========================
-32. **df['column'].str.upper()**: Elevate all letters to uppercase!
-33. **df['column'].str.contains()**: Unearth patterns in text with df['column'].str.contains().
-34. **df['column'].str.title()**: Capitalize the first letter of each word in the string.
-35. **df['column'].str.capitalize()**: Capitalize the first letter of the string.
-36. **df['column'].str.swapcase()**: Swap the case of each character (e.g., "aBc" becomes "AbC").
-37. **df['column'].str.strip()**: Remove leading and trailing whitespace.
-38. **df['column'].str.lstrip()**: Remove leading whitespace.
-39. **df['column'].str.rstrip()**: Remove trailing whitespace.
-40. **df['column'].str.strip('char')**: Remove specific characters from the start and end.
-41. **df['column'].str.lstrip('char')**: Remove specific characters from the start.
-42. **df['column'].str.rstrip('char')**: Remove specific characters from the end.
-43. **df['column'].str.len()**: Calculate the length (number of characters) of each string.
-44. **df['column'].str.slice(start, stop)**: Extract a substring based on the specified start and stop positions.
-45. **df['column'].str.replace(old, new)**: Replace a substring with a new value.
-46. **df['column'].str.replace(r'pattern', new)**: Replace substrings based on a regular expression pattern.
-47. **df['column'].str.contains('substring')**: Check if a string contains a specific substring and returns a boolean.
-48. **df['column'].str.startswith('prefix')**: Check if a string starts with a specific prefix and returns a boolean.
-49. **df['column'].str.endswith('suffix')**: Check if a string ends with a specific suffix and returns a boolean.
-50. **df['column'].str.split('delimiter')**: Split a string into a list of substrings based on a delimiter.
-51. **df['column'].str.join('separator')**: Join a list of strings with a specified separator.
-52. **df['column'].str.cat(sep='separator')**: Concatenate strings within a column, separated by a specified separator.
+35. **df['column'].str.upper()**: Elevate all letters to uppercase!
+36. **df['column'].str.contains()**: Unearth patterns in text with df['column'].str.contains().
+37. **df['column'].str.title()**: Capitalize the first letter of each word in the string.
+38. **df['column'].str.capitalize()**: Capitalize the first letter of the string.
+39. **df['column'].str.swapcase()**: Swap the case of each character (e.g., "aBc" becomes "AbC").
+40. **df['column'].str.strip()**: Remove leading and trailing whitespace.
+41. **df['column'].str.lstrip()**: Remove leading whitespace.
+42. **df['column'].str.rstrip()**: Remove trailing whitespace.
+43. **df['column'].str.strip('char')**: Remove specific characters from the start and end.
+44. **df['column'].str.lstrip('char')**: Remove specific characters from the start.
+45. **df['column'].str.rstrip('char')**: Remove specific characters from the end.
+46. **df['column'].str.len()**: Calculate the length (number of characters) of each string.
+47. **df['column'].str.slice(start, stop)**: Extract a substring based on the specified start and stop positions.
+48. **df['column'].str.replace(old, new)**: Replace a substring with a new value.
+49. **df['column'].str.replace(r'pattern', new)**: Replace substrings based on a regular expression pattern.
+50. **df['column'].str.contains('substring')**: Check if a string contains a specific substring and returns a boolean.
+51. **df['column'].str.startswith('prefix')**: Check if a string starts with a specific prefix and returns a boolean.
+52. **df['column'].str.endswith('suffix')**: Check if a string ends with a specific suffix and returns a boolean.
+53. **df['column'].str.split('delimiter')**: Split a string into a list of substrings based on a delimiter.
+54. **df['column'].str.join('separator')**: Join a list of strings with a specified separator.
+55. **df['column'].str.cat(sep='separator')**: Concatenate strings within a column, separated by a specified separator.
 
 **Datetime Operations (on datetime-type columns):**
 =========================
-53. **df['column'].dt.year**: Peek at the year effortlessly from a datetime column.
-54. **df['column'].dt.month**: Dip your fingers to unearth the month from datetime data.
-55. **df['column'].dt.day**: Extracts the day component from the datetime column.
-56. **df['column'].dt.hour**: Extracts the hour component from the datetime column.
-57. **df['column'].dt.minute**: Extracts the minute component from the datetime column.
-58. **df['column'].dt.second**: Extracts the second component from the datetime column.
-59. **df['column'].dt.microsecond**: Extracts the microsecond component from the datetime column.
-60. **df['column'].dt.date**: Extracts the date component (without the time) from the datetime column.
-61. **df['column'].dt.time**: Extracts the time component (without the date) from the datetime column.
-62. **df['column'].dt.dayofweek**: Returns the day of the week as an integer, where Monday is 0 and Sunday is 6.
-63. **df['column'].dt.day_name()**: Returns the day of the week as a string (e.g., 'Monday', 'Tuesday').
-64. **df['column'].dt.is_month_start**: Returns a Boolean indicating if the date is the start of the month.
-65. **df['column'].dt.is_month_end**: Returns a Boolean indicating if the date is the end of the month.
-66. **df['column'].dt.is_year_start**: Returns a Boolean indicating if the date is the start of the year.
-67. **df['column'].dt.is_year_end**: Returns a Boolean indicating if the date is the end of the year.
-68. **df['column'].dt.dayofyear**: Returns the day of the year as an integer.
-69. **df['column'].dt.week**: Returns the week number of the year.
-70. **df['column'].dt.weekday**: Returns the day of the week as an integer, where Monday is 0 and Sunday is 6.
-71. **df['column'].dt.quarter**: Returns the quarter of the year as an integer (1-4).
-72. **df['column'].dt.to_period('M')**: Converts the datetime to a period with a specified frequency (e.g., 'M' for monthly).
-73. **df['column'].dt.to_period('D')**: Converts the datetime to a period with a daily frequency.
-74. **df['column'].dt.strftime('format_string')**: Allows you to format the datetime as a string using a custom format.
+56. **df['column'].dt.year**: Peek at the year effortlessly from a datetime column.
+57. **df['column'].dt.month**: Dip your fingers to unearth the month from datetime data.
+58. **df['column'].dt.day**: Extracts the day component from the datetime column.
+59. **df['column'].dt.hour**: Extracts the hour component from the datetime column.
+60. **df['column'].dt.minute**: Extracts the minute component from the datetime column.
+61. **df['column'].dt.second**: Extracts the second component from the datetime column.
+62. **df['column'].dt.microsecond**: Extracts the microsecond component from the datetime column.
+63. **df['column'].dt.date**: Extracts the date component (without the time) from the datetime column.
+64. **df['column'].dt.time**: Extracts the time component (without the date) from the datetime column.
+65. **df['column'].dt.dayofweek**: Returns the day of the week as an integer, where Monday is 0 and Sunday is 6.
+66. **df['column'].dt.day_name()**: Returns the day of the week as a string (e.g., 'Monday', 'Tuesday').
+67. **df['column'].dt.is_month_start**: Returns a Boolean indicating if the date is the start of the month.
+68. **df['column'].dt.is_month_end**: Returns a Boolean indicating if the date is the end of the month.
+69. **df['column'].dt.is_year_start**: Returns a Boolean indicating if the date is the start of the year.
+70. **df['column'].dt.is_year_end**: Returns a Boolean indicating if the date is the end of the year.
+71. **df['column'].dt.dayofyear**: Returns the day of the year as an integer.
+72. **df['column'].dt.week**: Returns the week number of the year.
+73. **df['column'].dt.weekday**: Returns the day of the week as an integer, where Monday is 0 and Sunday is 6.
+74. **df['column'].dt.quarter**: Returns the quarter of the year as an integer (1-4).
+75. **df['column'].dt.to_period('M')**: Converts the datetime to a period with a specified frequency (e.g., 'M' for monthly).
+76. **df['column'].dt.to_period('D')**: Converts the datetime to a period with a daily frequency.
+77. **df['column'].dt.strftime('format_string')**: Allows you to format the datetime as a string using a custom format.
 
 ### Example 1:
 
