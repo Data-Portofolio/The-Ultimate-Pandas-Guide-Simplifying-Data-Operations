@@ -55,7 +55,7 @@ print(df)
 **Read and Write Data:**
 =========================
 
-1. **pd.read_csv()**: Explore the world of data with ease! Read data from a CSV file and convert it into a DataFrame.
+- **pd.read_csv()**: Explore the world of data with ease! Read data from a CSV file and convert it into a DataFrame.
 ```
 import pandas as pd
 
@@ -76,10 +76,10 @@ print(df.head())
 - `na_values='Not Available'`: Menggantikan nilai 'Not Available' dengan nilai NaN untuk menangani nilai yang hilang.
 - `usecols=['Tanggal', 'Column1', 'Column2']`: Membatasi pembacaan hanya pada kolom-kolom yang disebutkan dalam daftar tersebut.
   
-3. **pd.read_excel()**: Bring the world of spreadsheets into your DataFrame with pd.read_excel().
-4. **df.to_csv()**: Save your analysis results back to a shareable CSV format.
-5. **df.to_excel()**: Showcase your hard work in a neatly formatted Excel file.
-6. **df.to_sql()**: Let Pandas assist you in saving your DataFrame to your SQL database.
+- **pd.read_excel()**: Bring the world of spreadsheets into your DataFrame with pd.read_excel().
+- **df.to_csv()**: Save your analysis results back to a shareable CSV format.
+- **df.to_excel()**: Showcase your hard work in a neatly formatted Excel file.
+- **df.to_sql()**: Let Pandas assist you in saving your DataFrame to your SQL database.
 
 **Info and Statistics:**
 =========================
