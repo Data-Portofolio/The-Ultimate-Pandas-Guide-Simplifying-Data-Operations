@@ -84,20 +84,19 @@ print(df.head())
 
 **Info and Statistics:**
 =========================
-
-6. **df.info()**: Hand over control to Pandas to provide a comprehensive summary of your DataFrame's structure.
-7. **df.head()**: Take a sneak peek at your initial data to gain a quick understanding.
-8. **df.tail()**: Scroll through the tail end of your data to inspect the outcomes.
-9. **df.describe()**: Display statistical prowess with pd.describe() and uncover all the details.
-10. **df.shape**: Observe your DataFrame's dimensions, how many rows and columns it has.
-11. **df.columns**: Create a list of column names in the blink of an eye.
-12. **df.dtypes**: Use dtypes to reveal the secrets of column data types.
-13. **df.isnull()**: Let Pandas unveil the places where your data is missing.
+- **df.info()**: Hand over control to Pandas to provide a comprehensive summary of your DataFrame's structure.
+- **df.head()**: Take a sneak peek at your initial data to gain a quick understanding.
+- **df.tail()**: Scroll through the tail end of your data to inspect the outcomes.
+- **df.describe()**: Display statistical prowess with pd.describe() and uncover all the details.
+- **df.shape**: Observe your DataFrame's dimensions, how many rows and columns it has.
+- **df.columns**: Create a list of column names in the blink of an eye.
+- **df.dtypes**: Use dtypes to reveal the secrets of column data types.
+- **df.isnull()**: Let Pandas unveil the places where your data is missing.
 
 **Categorical Data Info:**
 =========================
 
-14. **`df.unique()`**: Metode ini digunakan untuk mendapatkan nilai unik dari suatu Series (kolom dalam DataFrame). Ini memberikan daftar nilai yang berbeda dari kolom tersebut.
+- **`df.unique()`**: Metode ini digunakan untuk mendapatkan nilai unik dari suatu Series (kolom dalam DataFrame). Ini memberikan daftar nilai yang berbeda dari kolom tersebut.
 
     Contoh:
 
@@ -112,7 +111,7 @@ print(df.head())
     Unique values in 'Category' column: ['A' 'B' 'C']
     ```
 
-15. **`df.nunique()`**: Metode ini mengembalikan jumlah nilai unik dalam suatu Series. Ini memberikan informasi tentang seberapa bervariasinya data dalam kolom.
+- **`df.nunique()`**: Metode ini mengembalikan jumlah nilai unik dalam suatu Series. Ini memberikan informasi tentang seberapa bervariasinya data dalam kolom.
 
     Contoh:
 
@@ -127,7 +126,7 @@ print(df.head())
     Number of unique values in 'Category' column: 3
     ```
 
-16. **`df.value_counts()`**: Metode ini menghitung frekuensi masing-masing nilai dalam suatu Series. Ini memberikan wawasan tentang seberapa sering masing-masing nilai muncul dalam data.
+- **`df.value_counts()`**: Metode ini menghitung frekuensi masing-masing nilai dalam suatu Series. Ini memberikan wawasan tentang seberapa sering masing-masing nilai muncul dalam data.
 
     Contoh:
 
@@ -149,8 +148,8 @@ print(df.head())
 
 **Data Selection:**
 =========================
-17. **df['column']**: Pick and extract the necessary column from the DataFrame.
-18. **df[['column1', 'column2']]**: Bundle your data by selecting multiple columns at once.
+- **df['column']**: Pick and extract the necessary column from the DataFrame.
+- **df[['column1', 'column2']]**: Bundle your data by selecting multiple columns at once.
    ```
    import pandas as pd
 
@@ -169,33 +168,33 @@ print(result)
    ```
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/11c7a992-8eeb-4f98-9eee-16016bf344fb)
 
-19. **df.loc[]**: Perform selection based on row and column labels.
-20. **df.iloc[]**: Execute selection based on row and column indices.
+- **df.loc[]**: Perform selection based on row and column labels.
+- **df.iloc[]**: Execute selection based on row and column indices.
 
 **Data Manipulation:**
 =========================
-21. **df.drop()**: Easily remove unwanted columns or rows.
-22. **df.rename()**: Personalize your DataFrame by changing column or index names.
-23. **df.set_index()**: Give your DataFrame the index that suits you.
-24. **df.reset_index()**: Reset the index and reorganize your DataFrame to its original state.
-25. **df.sort_values()**: Use sort_values() to arrange data as you desire.
+- **df.drop()**: Easily remove unwanted columns or rows.
+- **df.rename()**: Personalize your DataFrame by changing column or index names.
+- **df.set_index()**: Give your DataFrame the index that suits you.
+- **df.reset_index()**: Reset the index and reorganize your DataFrame to its original state.
+- **df.sort_values()**: Use sort_values() to arrange data as you desire.
 
 **Aggregation and Grouping:**
 =========================
-26. **df.groupby()**: Create groups based on specific columns to perform aggregation operations.
-27. **df.agg()**: Let Pandas extract the information you need from grouped data.
-28. **df.pivot()**: Present your data in a beautiful pivot format.
-29. **df.melt()**: Transform data into a long format and discover the pattern.
+- **df.groupby()**: Create groups based on specific columns to perform aggregation operations.
+- **df.agg()**: Let Pandas extract the information you need from grouped data.
+- **df.pivot()**: Present your data in a beautiful pivot format.
+- **df.melt()**: Transform data into a long format and discover the pattern.
 
 **Merging and Joining:**
 =========================
-30. **df.merge()**: Intuitively combine DataFrames with ease.
-31. **df.join()**: Merge with another DataFrame to intelligently combine information.
-32. **pd.concat()**: Powerfully combine multiple DataFrames into one.
+- **df.merge()**: Intuitively combine DataFrames with ease.
+- **df.join()**: Merge with another DataFrame to intelligently combine information.
+- **pd.concat()**: Powerfully combine multiple DataFrames into one.
 
 Dalam Pandas, terdapat beberapa metode untuk menggabungkan atau menggabungkan dua DataFrames. Berikut adalah perbedaan antara tiga metode utama: `merge`, `concat`, dan `join`.
 
-A. **`merge`:**
+1. **`merge`:**
    - `merge` digunakan ketika kita ingin menggabungkan DataFrames berdasarkan nilai-nilai tertentu dalam kolom-kolom tertentu (seperti bergabung berdasarkan kolom kunci).
    - Secara default, `merge` menggunakan tipe gabungan "inner join" (gabungan dalam) di mana hanya nilai-nilai yang cocok di kedua DataFrames yang akan disertakan.
    - Contoh:
@@ -218,7 +217,7 @@ A. **`merge`:**
     1   B        2        5
     ```
 
-B. **`concat`:**
+2. **`concat`:**
    - `concat` digunakan untuk menggabungkan DataFrames secara vertikal (menambahkan baris) atau secara horizontal (menambahkan kolom).
    - Secara default, `concat` melakukan penggabungan secara vertikal (axis=0).
    - Contoh:
@@ -243,7 +242,7 @@ B. **`concat`:**
     1  6  8
     ```
 
-C. **`join`:**
+3. **`join`:**
    - `join` digunakan untuk menggabungkan DataFrames berdasarkan indeks mereka.
    - Secara default, `join` menggunakan tipe gabungan "left join" (gabungan kiri), yang akan menggabungkan semua indeks dari DataFrame pertama dan nilai-nilai yang cocok dari DataFrame kedua.
    - Contoh:
@@ -270,32 +269,32 @@ C. **`join`:**
 
 **Data Filling and Replacement:**
 =========================
-33. **df.fillna()**: Fill missing values with policies you define.
-34. **df.replace(to_replace, value)**: Replace values with new ones as per your requirements.
+- **df.fillna()**: Fill missing values with policies you define.
+- **df.replace(to_replace, value)**: Replace values with new ones as per your requirements.
 
 **String Operations (on string-type columns):**
 =========================
-35. **df['column'].str.upper()**: Elevate all letters to uppercase!
-36. **df['column'].str.contains()**: Unearth patterns in text with df['column'].str.contains().
-37. **df['column'].str.title()**: Capitalize the first letter of each word in the string.
-38. **df['column'].str.capitalize()**: Capitalize the first letter of the string.
-39. **df['column'].str.swapcase()**: Swap the case of each character (e.g., "aBc" becomes "AbC").
-40. **df['column'].str.strip()**: Remove leading and trailing whitespace.
-41. **df['column'].str.lstrip()**: Remove leading whitespace.
-42. **df['column'].str.rstrip()**: Remove trailing whitespace.
-43. **df['column'].str.strip('char')**: Remove specific characters from the start and end.
-44. **df['column'].str.lstrip('char')**: Remove specific characters from the start.
-45. **df['column'].str.rstrip('char')**: Remove specific characters from the end.
-46. **df['column'].str.len()**: Calculate the length (number of characters) of each string.
-47. **df['column'].str.slice(start, stop)**: Extract a substring based on the specified start and stop positions.
-48. **df['column'].str.replace(old, new)**: Replace a substring with a new value.
-49. **df['column'].str.replace(r'pattern', new)**: Replace substrings based on a regular expression pattern.
-50. **df['column'].str.contains('substring')**: Check if a string contains a specific substring and returns a boolean.
-51. **df['column'].str.startswith('prefix')**: Check if a string starts with a specific prefix and returns a boolean.
-52. **df['column'].str.endswith('suffix')**: Check if a string ends with a specific suffix and returns a boolean.
-53. **df['column'].str.split('delimiter')**: Split a string into a list of substrings based on a delimiter.
-54. **df['column'].str.join('separator')**: Join a list of strings with a specified separator.
-55. **df['column'].str.cat(sep='separator')**: Concatenate strings within a column, separated by a specified separator.
+- **df['column'].str.upper()**: Elevate all letters to uppercase!
+- **df['column'].str.contains()**: Unearth patterns in text with df['column'].str.contains().
+- **df['column'].str.title()**: Capitalize the first letter of each word in the string.
+- **df['column'].str.capitalize()**: Capitalize the first letter of the string.
+- **df['column'].str.swapcase()**: Swap the case of each character (e.g., "aBc" becomes "AbC").
+- **df['column'].str.strip()**: Remove leading and trailing whitespace.
+- **df['column'].str.lstrip()**: Remove leading whitespace.
+- **df['column'].str.rstrip()**: Remove trailing whitespace.
+- **df['column'].str.strip('char')**: Remove specific characters from the start and end.
+- **df['column'].str.lstrip('char')**: Remove specific characters from the start.
+- **df['column'].str.rstrip('char')**: Remove specific characters from the end.
+- **df['column'].str.len()**: Calculate the length (number of characters) of each string.
+- **df['column'].str.slice(start, stop)**: Extract a substring based on the specified start and stop positions.
+- **df['column'].str.replace(old, new)**: Replace a substring with a new value.
+- **df['column'].str.replace(r'pattern', new)**: Replace substrings based on a regular expression pattern.
+- **df['column'].str.contains('substring')**: Check if a string contains a specific substring and returns a boolean.
+- **df['column'].str.startswith('prefix')**: Check if a string starts with a specific prefix and returns a boolean.
+- **df['column'].str.endswith('suffix')**: Check if a string ends with a specific suffix and returns a boolean.
+- **df['column'].str.split('delimiter')**: Split a string into a list of substrings based on a delimiter.
+- **df['column'].str.join('separator')**: Join a list of strings with a specified separator.
+- **df['column'].str.cat(sep='separator')**: Concatenate strings within a column, separated by a specified separator.
 
 **Datetime Operations (on datetime-type columns):**
 =========================
