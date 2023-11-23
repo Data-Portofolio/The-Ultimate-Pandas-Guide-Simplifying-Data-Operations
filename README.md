@@ -255,7 +255,7 @@ print(result_filtered)
 print("\nDataFrame setelah ditulis ke CSV dan dibaca kembali:")
 print(df_from_csv)
 ```
-![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/29178fdc-b1fa-4665-92b4-54253088d800)
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/8b81da07-987a-4642-bcc3-6e4a3a818a96)
 
 **Data Manipulation:**
 =========================
