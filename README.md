@@ -56,7 +56,8 @@ print(df)
 =========================
 
 - **pd.read_csv()**: Explore the world of data with ease! Read data from a CSV file and convert it into a DataFrame.
-```
+  
+```python
 import pandas as pd
 
 # Contoh: Membaca file CSV dengan delimiter (pemisah) titik koma, membatasi kolom, dan menangani tanggal
@@ -150,7 +151,8 @@ print(df.head())
 =========================
 - **df['column']**: Pick and extract the necessary column from the DataFrame.
 - **df[['column1', 'column2']]**: Bundle your data by selecting multiple columns at once.
-   ```
+  
+   ```python
    import pandas as pd
 
    # Create a DataFrame
@@ -171,6 +173,40 @@ print(df.head())
 - **df.loc[]**: Perform selection based on row and column labels.
 - **df.iloc[]**: Execute selection based on row and column indices.
 
+
+```python
+import pandas as pd
+
+# Create a DataFrame
+data = {'Nama': ['Alice', 'Bob', 'Charlie', 'David'],
+        'Usia': [25, 30, 35, 28],
+        'Kota': ['Jakarta', 'Surabaya', 'Bandung', 'Medan']}
+
+df = pd.DataFrame(data)
+
+# Menambahkan kolom baru berdasarkan kriteria
+df['Status'] = df['Usia'].apply(lambda x: 'Dewasa' if x >= 30 else 'Muda')
+
+# Menambahkan kolom dengan panjang karakter nama
+df['Panjang_Nama'] = df['Nama'].apply(len)
+
+# Menampilkan data yang memenuhi kriteria tertentu
+result_filtered = df[df['Usia'] > 25]
+
+# Menyimpan DataFrame ke file CSV
+df.to_csv('dataframe_example.csv', index=False)
+
+# Membaca DataFrame dari file CSV
+df_from_csv = pd.read_csv('dataframe_example.csv')
+
+# Menampilkan hasil
+print("DataFrame Asli:")
+print(df)
+print("\nDataFrame setelah penambahan kolom dan filter:")
+print(result_filtered)
+print("\nDataFrame setelah ditulis ke CSV dan dibaca kembali:")
+print(df_from_csv)
+```
 **Data Manipulation:**
 =========================
 - **df.drop()**: Easily remove unwanted columns or rows.
