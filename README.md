@@ -68,8 +68,6 @@ df = pd.read_csv(file_path, sep=';', skiprows=2, parse_dates=['Tanggal'], na_val
 # Menampilkan lima baris pertama dari DataFrame
 print(df.head())
 ```
-Tentu, mari tambahkan penjelasan ke dalam contoh kode tersebut:
-
 **_Penjelasan:_**
 
 - `sep=';'`: Menggunakan titik koma (`;`) sebagai delimiter dalam file CSV.
