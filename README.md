@@ -97,62 +97,63 @@ print(df.head())
 **Categorical Data Info:**
 =========================
 
-- **`df.unique()`**: Metode ini digunakan untuk mendapatkan nilai unik dari suatu Series (kolom dalam DataFrame). Ini memberikan daftar nilai yang berbeda dari kolom tersebut.
+### **`df.unique()`**
+Metode ini digunakan untuk mendapatkan nilai unik dari suatu Series (kolom dalam DataFrame). Ini memberikan daftar nilai yang berbeda dari kolom tersebut.
 
-    Contoh:
+#### Contoh:
 
-    ```python
+   
     unique_values = df['Category'].unique()
     print("Unique values in 'Category' column:", unique_values)
-    ```
+    
 
-    Outputnya:
+Outputnya:
 
-    ```
+    
     Unique values in 'Category' column: ['A' 'B' 'C']
-    ```
+    
 
-- **`df.nunique()`**: Metode ini mengembalikan jumlah nilai unik dalam suatu Series. Ini memberikan informasi tentang seberapa bervariasinya data dalam kolom.
+### **`df.nunique()`**
+Metode ini mengembalikan jumlah nilai unik dalam suatu Series. Ini memberikan informasi tentang seberapa bervariasinya data dalam kolom.
 
-    Contoh:
+#### Contoh:
 
     ```python
     num_unique_values = df['Category'].nunique()
     print("Number of unique values in 'Category' column:", num_unique_values)
     ```
 
-    Outputnya:
+Outputnya:
 
     ```
     Number of unique values in 'Category' column: 3
     ```
+    
+### **`df.value_counts()`**
+Metode ini menghitung frekuensi masing-masing nilai dalam suatu Series. Ini memberikan wawasan tentang seberapa sering masing-masing nilai muncul dalam data.
 
-- **`df.value_counts()`**: Metode ini menghitung frekuensi masing-masing nilai dalam suatu Series. Ini memberikan wawasan tentang seberapa sering masing-masing nilai muncul dalam data.
+#### Contoh:
 
-    Contoh:
-
-    ```python
     value_counts = df['Category'].value_counts()
     print("Value counts for each unique value in 'Category' column:")
     print(value_counts)
-    ```
+   
+Outputnya:
 
-    Outputnya:
 
-    ```
     Value counts for each unique value in 'Category' column:
     A    3
     B    2
     C    1
     Name: Category, dtype: int64
-    ```
+ 
 
 **Data Selection:**
 =========================
 - **df['column']**: Pick and extract the necessary column from the DataFrame.
 - **df[['column1', 'column2']]**: Bundle your data by selecting multiple columns at once.
 
-_Contoh:_
+### Example
 ```python
 import pandas as pd
 
@@ -192,7 +193,7 @@ print(result_complex_filter)
 - **df.loc[]**: Perform selection based on row and column labels.
 - **df.iloc[]**: Execute selection based on row and column indices.
 
-_Contoh:_
+### Example 1:
 
 ```python
 import pandas as pd
@@ -222,6 +223,7 @@ print(result_iloc)
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/c32fcb4c-e25a-4aeb-bc80-acafad31c503)
 
 ---
+### Example2:
 ```python
 import pandas as pd
 
@@ -280,7 +282,7 @@ print(df_from_csv)
 
 Dalam Pandas, terdapat beberapa metode untuk menggabungkan atau menggabungkan dua DataFrames. Berikut adalah perbedaan antara tiga metode utama: `merge`, `concat`, dan `join`.
 
-1. **`merge`:**
+### 1. **`merge`:**
    - `merge` digunakan ketika kita ingin menggabungkan DataFrames berdasarkan nilai-nilai tertentu dalam kolom-kolom tertentu (seperti bergabung berdasarkan kolom kunci).
    - Secara default, `merge` menggunakan tipe gabungan "inner join" (gabungan dalam) di mana hanya nilai-nilai yang cocok di kedua DataFrames yang akan disertakan.
    - Contoh:
@@ -303,7 +305,7 @@ Dalam Pandas, terdapat beberapa metode untuk menggabungkan atau menggabungkan du
     1   B        2        5
     ```
 
-2. **`concat`:**
+### 2. **`concat`:**
    - `concat` digunakan untuk menggabungkan DataFrames secara vertikal (menambahkan baris) atau secara horizontal (menambahkan kolom).
    - Secara default, `concat` melakukan penggabungan secara vertikal (axis=0).
    - Contoh:
@@ -328,7 +330,7 @@ Dalam Pandas, terdapat beberapa metode untuk menggabungkan atau menggabungkan du
     1  6  8
     ```
 
-3. **`join`:**
+### 3. **`join`:**
    - `join` digunakan untuk menggabungkan DataFrames berdasarkan indeks mereka.
    - Secara default, `join` menggunakan tipe gabungan "left join" (gabungan kiri), yang akan menggabungkan semua indeks dari DataFrame pertama dan nilai-nilai yang cocok dari DataFrame kedua.
    - Contoh:
@@ -351,7 +353,8 @@ Dalam Pandas, terdapat beberapa metode untuk menggabungkan atau menggabungkan du
     Y  2  4  NaN  NaN
     ```
 
-**_Ringkasan_**: `merge` digunakan untuk menggabungkan berdasarkan kolom, `concat` untuk menggabungkan secara vertikal atau horizontal, dan `join` untuk menggabungkan berdasarkan indeks. Pilihan metode tergantung pada kebutuhan spesifik analisis Anda.
+#### **_Ringkasan_**:
+`merge` digunakan untuk menggabungkan berdasarkan kolom, `concat` untuk menggabungkan secara vertikal atau horizontal, dan `join` untuk menggabungkan berdasarkan indeks. Pilihan metode tergantung pada kebutuhan spesifik analisis Anda.
 
 **Data Filling and Replacement:**
 =========================
