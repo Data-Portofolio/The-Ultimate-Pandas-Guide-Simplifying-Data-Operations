@@ -72,11 +72,11 @@ print(df.head())
 
 #### **_Penjelasan:_**
 
-`sep=';'`: Menggunakan titik koma (`;`) sebagai delimiter dalam file CSV.
-`skiprows=2`: Mengabaikan dua baris pertama dalam file CSV.
-`parse_dates=['Tanggal']`: Mengonversi kolom 'Tanggal' menjadi tipe data datetime.
-`na_values='Not Available'`: Menggantikan nilai 'Not Available' dengan nilai NaN untuk menangani nilai yang hilang.
-`usecols=['Tanggal', 'Column1', 'Column2']`: Membatasi pembacaan hanya pada kolom-kolom yang disebutkan dalam daftar tersebut.
+>`sep=';'`: Menggunakan titik koma (`;`) sebagai delimiter dalam file CSV.
+>`skiprows=2`: Mengabaikan dua baris pertama dalam file CSV.
+>`parse_dates=['Tanggal']`: Mengonversi kolom 'Tanggal' menjadi tipe data datetime.
+>`na_values='Not Available'`: Menggantikan nilai 'Not Available' dengan nilai NaN untuk menangani nilai yang hilang.
+>`usecols=['Tanggal', 'Column1', 'Column2']`: Membatasi pembacaan hanya pada kolom-kolom yang disebutkan dalam daftar tersebut.
 
 - **pd.read_excel()**: Bring the world of spreadsheets into your DataFrame with pd.read_excel().
 - **df.to_csv()**: Save your analysis results back to a shareable CSV format.
@@ -103,22 +103,121 @@ Metode ini digunakan untuk mendapatkan nilai unik dari suatu Series (kolom dalam
 ```python
 import pandas as pd
 
-# Assuming you have a DataFrame df with a 'Category' column
-data = {'Category': ['A', 'B', 'A', 'C', 'B', 'D', 'A', 'C']}
+# Creating a larger DataFrame with multiple columns
+data = {
+    'Category': ['A', 'B', 'A', 'C', 'B', 'D', 'A', 'C'],
+    'Count': [10, 5, 8, 12, 5, 7, 10, 15],
+    'Status': ['Active', 'Inactive', 'Active', 'Active', 'Inactive', 'Active', 'Inactive', 'Active']
+}
 df = pd.DataFrame(data)
 
-# Get unique values in 'Category' column
-unique_values = df['Category'].unique()
+# Print the output of df.iteritems()
+print("Output of df.iteritems():")
+for column_name, column_values in df.iteritems():
+    print(f"Column Name: {column_name}")
+    print(column_values)
+    print()
 
-# Print unique values
-print("Unique values in 'Category' column:", unique_values)
+# Get unique values and their index for each column using enumerate
+for column_name, column_values in df.iteritems():
+    unique_values = column_values.unique()
+    print(f"\nUnique values in '{column_name}' column:")
+    
+    for index, value in enumerate(unique_values):
+        print(f"  Index {index}: {value}")
 ```
 
-Output:
+#### Output:
 
 ```
-Unique values in 'Category' column: ['A' 'B' 'C' 'D']
-```  
+Output of df.iteritems():
+Column Name: Category
+0    A
+1    B
+2    A
+3    C
+4    B
+5    D
+6    A
+7    C
+Name: Category, dtype: object
+
+Column Name: Count
+0    10
+1     5
+2     8
+3    12
+4     5
+5     7
+6    10
+7    15
+Name: Count, dtype: int64
+
+Column Name: Status
+0       Active
+1     Inactive
+2       Active
+3       Active
+4     Inactive
+5       Active
+6     Inactive
+7       Active
+Name: Status, dtype: object
+
+
+Unique values in 'Category' column:
+  Index 0: A
+  Index 1: B
+  Index 2: C
+  Index 3: D
+
+Unique values in 'Count' column:
+  Index 0: 10
+  Index 1: 5
+  Index 2: 8
+  Index 3: 12
+  Index 4: 7
+  Index 5: 15
+
+Unique values in 'Status' column:
+  Index 0: Active
+  Index 1: Inactive
+```
+<details> 
+    <summary>More Details about `df.iteritems()` & `enumerate`! </summary>
+   
+### `df.iteritems()`
+
+`df.iteritems()` adalah metode pada Pandas untuk mengiterasi melalui kolom-kolom dalam DataFrame. Metode ini memberikan pasangan (nama_kolom, Series) untuk setiap kolom, memungkinkan akses ke nilai-nilai dalam kolom tersebut.
+
+Dalam contoh ini:
+
+```python
+for nama_kolom, nilai_kolom in df.iteritems():
+    print(f"Nama Kolom: {nama_kolom}")
+    print(f"Isi Kolom:")
+    print(nilai_kolom)
+    print()
+```
+
+Loop ini berjalan melalui setiap kolom DataFrame (`df`), mencetak nama kolom dan nilai kolom (sebagai objek Series). Dalam contoh ini, `nilai_kolom` berisi nilai-nilai kolom.
+
+### `enumerate`
+
+`enumerate` adalah fungsi Python yang memberikan indeks dan nilai saat mengiterasi melalui suatu iterable. Berguna untuk mendapatkan kedua informasi tersebut selama iterasi.
+
+Dalam contoh ini:
+
+```python
+for indeks, nilai in enumerate(nilai_unik):
+    print(f"  Indeks {indeks}: {nilai}")
+```
+
+Loop ini mengiterasi melalui nilai-nilai unik dari suatu kolom (dengan `unique()`), mencetak indeks dan nilai untuk setiap elemen. `nilai_unik` berisi nilai-nilai unik tersebut.
+
+Secara keseluruhan, `df.iteritems()` digunakan untuk iterasi kolom-kolom, dan `enumerate` digunakan di dalam loop untuk mendapatkan indeks dan nilai dari setiap nilai unik dalam suatu kolom. Ini memberikan ringkasan lebih detail dari DataFrame, termasuk nilai unik dan indeks mereka untuk setiap kolom.
+
+</details>
 
 ### **`df.nunique()`**
 Metode ini mengembalikan jumlah nilai unik dalam suatu Series. Ini memberikan informasi tentang seberapa bervariasinya data dalam kolom.
