@@ -828,7 +828,7 @@ Summary of 'Category' Column:
 """ % (total_entries, num_unique_values, percentage_unique))
 ```
 
-## Output:
+#### Output:
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/d1020dde-4b36-4433-8f97-f16a4faf971e)
 </details>
 
@@ -873,7 +873,7 @@ Summary of 'Category' Column:
 - Percentage of unique values: %.2f%%
 """ % (total_entries, num_unique_values, percentage_unique))
 ```
-Output:
+#### Output:
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/874c7013-22d2-4b00-8e44-f98a73d31d1a)
 </details>
 
