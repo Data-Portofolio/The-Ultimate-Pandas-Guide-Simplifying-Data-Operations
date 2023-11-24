@@ -787,7 +787,7 @@ Metode `.format()` digunakan dalam Python untuk memformat string. Ini memberikan
 Jadi, singkatnya, metode `.format()` adalah cara untuk memasukkan nilai ke dalam string dengan lebih fleksibel, dan format numerik seperti `.2f` digunakan untuk mengatur tampilan angka desimal. F-strings adalah alternatif modern dan lebih ringkas untuk melakukan hal yang sama, terutama pada versi Python yang lebih baru.
 
 <details>
-<summary>🔥 Example 1</summary>
+<summary align="center">🔥 Example 1</summary>
 
 ```python
 import pandas as pd
@@ -833,7 +833,7 @@ Summary of 'Category' Column:
 </details>
 
 <details>
-<summary>🔥 Example 2</summary>
+<summary align="center">🔥 Example 2</summary>
 
 ```python
 import pandas as pd
