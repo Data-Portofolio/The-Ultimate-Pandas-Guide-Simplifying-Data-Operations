@@ -891,10 +891,11 @@ Summary of 'Category' Column:
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-
+<a name="Apply-&-Lambda"></a>
 # 14. Apply & Lambda
 
-1. **Lambda Functions:**
+### 1. Lambda Functions
+
    ```python
    multiply = lambda a, b: a * b
    print("Result of multiplication:", multiply(5, 6))
@@ -905,7 +906,8 @@ Summary of 'Category' Column:
    - Improved the lambda function to explicitly mention the operation being performed.
    - Updated the print statements for clearer output.
 
-2. **Apply with NumPy:**
+### 2. Apply with NumPy
+
    ```python
    # Aggregating sum for each column and row
    sum_by_column = df_apply.apply(np.sum, axis=0)  # Sum for each column
@@ -914,7 +916,8 @@ Summary of 'Category' Column:
    - Renamed variables for better readability.
    - Added comments to clarify the purpose of each line.
 
-3. **Apply with Custom Function:**
+### 3. Apply with Custom Function
+
    ```python
    def segment(total_order):
        if total_order >= 100:
@@ -930,7 +933,8 @@ Summary of 'Category' Column:
    - Simplified the segment function by directly working with the 'total_order' column.
    - Removed unnecessary lambda expression and variable assignments.
 
-4. **Apply with Two Arguments:**
+### 4. Apply with Two Arguments
+
    ```python
    def segment_new(province, total_order):
        return 'Potential' if (province == 'DKI Jakarta') and (total_order >= 75) else 'Not Potential'
@@ -939,14 +943,16 @@ Summary of 'Category' Column:
    ```
    - Kept the function as is since it is already concise and clear.
 
-5. **Apply with Boolean Expression:**
+### 5. Apply with Boolean Expression
+
    ```python
    df['is_jakpus'] = df['city'].apply(lambda x: x == 'Jakarta Pusat')
    df.head()
    ```
    - Renamed the column to 'is_jakpus' for clarity.
 
-6. **Apply with String Slicing:**
+### 6. Apply with String Slicing
+
    ```python
    df['year'] = df['order_month'].apply(lambda x: x[:4])
    df.head()
