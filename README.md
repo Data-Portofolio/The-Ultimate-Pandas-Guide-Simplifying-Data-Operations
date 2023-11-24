@@ -698,7 +698,9 @@ _Output:_
 <details>
    <summary align="center" >🔥 Example 2</summary>
    
-```phyton
+Your code is almost correct for identifying leap years in the 'Tanggal_Lahir' (birthdate) column. However, there's a small error in the leap year condition. Here's the corrected version:
+
+```python
 import pandas as pd
 
 # Create a DataFrame with birthdates
@@ -712,7 +714,7 @@ df['Tanggal_Lahir'] = pd.to_datetime(df['Tanggal_Lahir'])
 
 # Extract year and check for leap year
 df['Tahun_Kabisat'] = df['Tanggal_Lahir'].dt.year
-df['Is_Kabisat'] = df['Tahun_Kabisat'].apply(lambda year: year % 4 == 0 and (year % 100 != 0 or year % 400 == 0))
+df['Is_Kabisat'] = df['Tahun_Kabisat'].apply(lambda year: (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0))
 
 # Select rows where the birthdate is on a leap year
 leap_year_df = df[df['Is_Kabisat']]
@@ -722,6 +724,7 @@ print("DataFrame with Birthdays on Leap Years:")
 print(leap_year_df[['Nama', 'Tanggal_Lahir', 'Tahun_Kabisat']])
 ```
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/3302e1f5-a7f3-4099-a54b-5e79efe88e22)
+
 </details>
 
 - df['category_column'] = df['category_column'].`astype('category')`
