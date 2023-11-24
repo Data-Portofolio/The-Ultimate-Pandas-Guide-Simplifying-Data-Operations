@@ -146,8 +146,11 @@ for column_name, column_values in df.iteritems():
     for index, value in enumerate(unique_values):
         print(f"  Index {index}: {value}")
 ```
+<details>
+    <summary align="left">
+       🕹️ Output: 
+    </summary>
 
-#### Output:
 
 ```
 Output of df.iteritems():
@@ -203,8 +206,10 @@ Unique values in 'Status' column:
   Index 0: Active
   Index 1: Inactive
 ```
+</details>
+
 <details> 
-    <summary align="center">
+    <summary align="right">
        🥇 More Details about `df.iteritems()` & `enumerate`! 
     </summary>
    
