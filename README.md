@@ -29,7 +29,9 @@ Welcome to My repository! This comprehensive guide serves as your key to masteri
 Pandas is a go-to library for data manipulation, analysis, and transformation. However, its rich set of functions can be intimidating for beginners. This guide is designed to make your journey with Pandas both accessible and enjoyable. It offers a hands-on approach, packed with practical tips, tricks, and real-world examples to help you become proficient in using Pandas for a wide range of tasks.
 
 # Table of Contents
-1. [ Make DataFrame ](#Make-DataFrame)
+
+   
+1. [Make DataFrame ](#Make-DataFrame)
 2. [Read and Write Data](#Read-and-Write-Data)
 3. [Info and Statistics](#Info-and-Statistics)
 4. [Categorical Data Info](#Categorical-Data-Info)
@@ -39,7 +41,7 @@ Pandas is a go-to library for data manipulation, analysis, and transformation. H
 8. [Merging and Joining](#Merging-and-Joining)
 9. [String Operations](#String-Operations)
 10. [Datetime Operations](#Datetime-Operations)
-11.  [Format Method](#Format-Method)
+11. [Format Method](#Format-Method)
 
 
 <a name="Make-DataFrame"></a>
@@ -199,7 +201,9 @@ Unique values in 'Status' column:
   Index 1: Inactive
 ```
 <details> 
-    <summary>🥇 More Details about `df.iteritems()` & `enumerate`! </summary>
+    <summary align="center">
+       🥇 More Details about `df.iteritems()` & `enumerate`! 
+    </summary>
    
 ### `df.iteritems()`
 
