@@ -735,8 +735,59 @@ print(leap_year_df[['Nama', 'Tanggal_Lahir', 'Tahun_Kabisat']])
 <a name="Format-Method"></a>
 # 13. Format Method
 
-### Example 1:
+Metode `.format()` digunakan dalam Python untuk memformat string. Ini memberikan cara yang lebih fleksibel dan kuat daripada metode lama menggunakan `%` operator. Beberapa elemen kunci dalam metode `.format()` termasuk:
 
+### 1. Placeholder Curly Braces `{}`
+   - Curly braces digunakan sebagai tempat penampung atau placeholder untuk nilai yang akan dimasukkan ke dalam string.
+
+     Contoh:
+     ```python
+     print("Hello, {}!".format("World"))
+     ```
+
+### 2. Urutan Argumen
+   - Urutan argumen yang diberikan dalam metode `.format()` sesuai dengan urutan tempat penampung dalam string.
+
+     Contoh:
+     ```python
+     print("Nama: {}, Usia: {}".format("John", 25))
+     ```
+
+### 3. **Penomoran Tempat Penampung:**
+   - Anda dapat memberikan nomor pada tempat penampung untuk mengontrol urutan argumen.
+
+     Contoh:
+     ```python
+     print("Nama: {0}, Usia: {1}".format("John", 25))
+     ```
+
+### 4. **Pemformatan Numerik:**
+   - Anda dapat menggunakan format numerik khusus, seperti `{:.2f}`, untuk mengontrol jumlah angka desimal pada bilangan floating-point.
+
+     Contoh:
+     ```python
+     value = 3.14159
+     print("Nilai Pi: {:.2f}".format(value))
+     ```
+
+   - Pada contoh di atas, `:.2f` berarti dua digit di belakang koma untuk nilai desimal.
+
+### 5. **F-Strings (Formatted String Literals):**
+   - Dengan Python 3.6 ke atas, Anda dapat menggunakan f-strings sebagai alternatif yang lebih mudah dibaca dan menulis.
+
+     Contoh:
+     ```python
+     name = "John"
+     age = 25
+     print(f"Nama: {name}, Usia: {age}")
+     ```
+
+   - Dalam f-strings, Anda dapat langsung menulis variabel di dalam string dengan menggunakan `{}`.
+
+Jadi, singkatnya, metode `.format()` adalah cara untuk memasukkan nilai ke dalam string dengan lebih fleksibel, dan format numerik seperti `.2f` digunakan untuk mengatur tampilan angka desimal. F-strings adalah alternatif modern dan lebih ringkas untuk melakukan hal yang sama, terutama pada versi Python yang lebih baru.
+
+<details>
+<summary>🔥 Example 1</summary>
 
 ```python
 import pandas as pd
@@ -777,11 +828,12 @@ Summary of 'Category' Column:
 """ % (total_entries, num_unique_values, percentage_unique))
 ```
 
-#### Output:
+## Output:
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/d1020dde-4b36-4433-8f97-f16a4faf971e)
+</details>
 
-
-### Example 2:
+<details>
+<summary>🔥 Example 2</summary>
 
 ```python
 import pandas as pd
@@ -821,9 +873,9 @@ Summary of 'Category' Column:
 - Percentage of unique values: %.2f%%
 """ % (total_entries, num_unique_values, percentage_unique))
 ```
-
-#### Output:
+Output:
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/874c7013-22d2-4b00-8e44-f98a73d31d1a)
+</details>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 <h3>
