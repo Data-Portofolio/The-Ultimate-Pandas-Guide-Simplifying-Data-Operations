@@ -652,10 +652,12 @@ print(weekends_df)
 <a name="Data-Type-Conversion"></a>
 # 12. Data Type Conversion
 
-- `df['column_name'] = df['column_name'].astype('int64')`
-- `df['date_column'] = pd.to_datetime(df['date_column'])`
+- df['column_name'] = df['column_name'].`astype('int64')`
+- df['date_column'] = pd.`to_datetime(df['date_column'])`
   
-### Example 1:
+<details>
+<summary align="center" >🔥 Example 1</summary>
+   
 ```python
 import pandas as pd
 
@@ -689,9 +691,11 @@ print(weekday_df[['Nama', 'Hari', 'Tanggal_Absen']])
 
 _Output:_
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/42f857f5-709a-43a1-9886-22abc1aa8d3b)
+</details>
 
----
-### Example 2:
+
+<details>
+<summary align="center" >🔥 Example 2</summary>
 ```phyton
 import pandas as pd
 
@@ -716,11 +720,12 @@ print("DataFrame with Birthdays on Leap Years:")
 print(leap_year_df[['Nama', 'Tanggal_Lahir', 'Tahun_Kabisat']])
 ```
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/3302e1f5-a7f3-4099-a54b-5e79efe88e22)
+</details>
 
-- `df['category_column'] = df['category_column'].astype('category')`
-- `df['numeric_column'] = pd.to_numeric(df['numeric_column'], errors='coerce')`
-- `df['boolean_column'] = df['boolean_column'].astype(bool)`
-- `df['string_column'] = df['string_column'].astype(str)`
+- df['category_column'] = df['category_column'].`astype('category')`
+- df['numeric_column'] = pd.`to_numeric(df['numeric_column'], errors='coerce')`
+- df['boolean_column'] = df['boolean_column'].`astype(bool)`
+- df['string_column'] = df['string_column'].`astype(str)`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
