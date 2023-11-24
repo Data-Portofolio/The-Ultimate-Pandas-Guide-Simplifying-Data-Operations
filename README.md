@@ -39,9 +39,12 @@ Pandas is a go-to library for data manipulation, analysis, and transformation. H
 6. [Data Manipulation](#Data-Manipulation)
 7. [Aggregation and Grouping](#Aggregation-and-Grouping)
 8. [Merging and Joining](#Merging-and-Joining)
-9. [String Operations](#String-Operations)
-10. [Datetime Operations](#Datetime-Operations)
-11. [Format Method](#Format-Method)
+9. [Data Filling and Replacement](#Data-Filling-and-Replacement)
+10. [String Operations](#String-Operations)
+11. [Datetime Operations](#Datetime-Operations)
+12. [Data Type Conversion](#Data-Type-Conversion)
+13. [Format Method](#Format-Method)
+14. 
 
 
 <a name="Make-DataFrame"></a>
@@ -520,54 +523,54 @@ Dalam Pandas, terdapat beberapa metode untuk menggabungkan atau menggabungkan du
 <a name="String-Operations)"></a>
 # 10. String Operations:
 
-- df['column'].`str.upper()`: Elevate all letters to uppercase!
-- df['column'].`str.contains()`: Unearth patterns in text with df['column'].str.contains().
-- df['column'].`str.title()`: Capitalize the first letter of each word in the string.
-- df['column'].`str.capitalize()`: Capitalize the first letter of the string.
-- **df['column'].str.swapcase()**: Swap the case of each character (e.g., "aBc" becomes "AbC").
-- **df['column'].str.strip()**: Remove leading and trailing whitespace.
-- **df['column'].str.lstrip()**: Remove leading whitespace.
-- **df['column'].str.rstrip()**: Remove trailing whitespace.
-- **df['column'].str.strip('char')**: Remove specific characters from the start and end.
-- **df['column'].str.lstrip('char')**: Remove specific characters from the start.
-- **df['column'].str.rstrip('char')**: Remove specific characters from the end.
-- **df['column'].str.len()**: Calculate the length (number of characters) of each string.
-- **df['column'].str.slice(start, stop)**: Extract a substring based on the specified start and stop positions.
-- **df['column'].str.replace(old, new)**: Replace a substring with a new value.
-- **df['column'].str.replace(r'pattern', new)**: Replace substrings based on a regular expression pattern.
-- **df['column'].str.contains('substring')**: Check if a string contains a specific substring and returns a boolean.
-- **df['column'].str.startswith('prefix')**: Check if a string starts with a specific prefix and returns a boolean.
-- **df['column'].str.endswith('suffix')**: Check if a string ends with a specific suffix and returns a boolean.
-- **df['column'].str.split('delimiter')**: Split a string into a list of substrings based on a delimiter.
-- **df['column'].str.join('separator')**: Join a list of strings with a specified separator.
-- **df['column'].str.cat(sep='separator')**: Concatenate strings within a column, separated by a specified separator.
+- **df['column'].`str.upper()`**: Elevate all letters to uppercase!
+- **df['column'].`str.contains()`**: Unearth patterns in text with df['column'].str.contains().
+- **df['column'].`str.title()`**: Capitalize the first letter of each word in the string.
+- **df['column'].`str.capitalize()`**: Capitalize the first letter of the string.
+- **df['column'].str.`swapcase()`**: Swap the case of each character (e.g., "aBc" becomes "AbC").
+- **df['column'].str.`strip()`**: Remove leading and trailing whitespace.
+- **df['column'].str.`lstrip()`**: Remove leading whitespace.
+- **df['column'].str.`rstrip()`**: Remove trailing whitespace.
+- **df['column'].str.`strip('char')`**: Remove specific characters from the start and end.
+- **df['column'].str.`lstrip('char')`**: Remove specific characters from the start.
+- **df['column'].str.`rstrip('char')`**: Remove specific characters from the end.
+- **df['column'].str.`len()`**: Calculate the length (number of characters) of each string.
+- **df['column'].str.`slice(start, stop)`**: Extract a substring based on the specified start and stop positions.
+- **df['column'].str.`replace(old, new)`**: Replace a substring with a new value.
+- **df['column'].str.`replace(r'pattern', new)`**: Replace substrings based on a regular expression pattern.
+- **df['column'].str.`contains('substring')`**: Check if a string contains a specific substring and returns a boolean.
+- **df['column'].str.`startswith('prefix')`**: Check if a string starts with a specific prefix and returns a boolean.
+- **df['column'].str.`endswith('suffix')`**: Check if a string ends with a specific suffix and returns a boolean.
+- **df['column'].str.`split('delimiter')`**: Split a string into a list of substrings based on a delimiter.
+- **df['column'].str.`join('separator')`**: Join a list of strings with a specified separator.
+- **df['column'].str.`cat(sep='separator')`**: Concatenate strings within a column, separated by a specified separator.
   
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <a name="Datetime-Operations"></a>
 # 11. Datetime Operations:
-- **df['column'].dt.year**: Peek at the year effortlessly from a datetime column.
-- **df['column'].dt.month**: Dip your fingers to unearth the month from datetime data.
-- **df['column'].dt.day**: Extracts the day component from the datetime column.
-- **df['column'].dt.hour**: Extracts the hour component from the datetime column.
-- **df['column'].dt.minute**: Extracts the minute component from the datetime column.
-- **df['column'].dt.second**: Extracts the second component from the datetime column.
-- **df['column'].dt.microsecond**: Extracts the microsecond component from the datetime column.
-- **df['column'].dt.date**: Extracts the date component (without the time) from the datetime column.
-- **df['column'].dt.time**: Extracts the time component (without the date) from the datetime column.
-- **df['column'].dt.dayofweek**: Returns the day of the week as an integer, where Monday is 0 and Sunday is 6.
-- **df['column'].dt.day_name()**: Returns the day of the week as a string (e.g., 'Monday', 'Tuesday').
-- **df['column'].dt.is_month_start**: Returns a Boolean indicating if the date is the start of the month.
-- **df['column'].dt.is_month_end**: Returns a Boolean indicating if the date is the end of the month.
-- **df['column'].dt.is_year_start**: Returns a Boolean indicating if the date is the start of the year.
-- **df['column'].dt.is_year_end**: Returns a Boolean indicating if the date is the end of the year.
-- **df['column'].dt.dayofyear**: Returns the day of the year as an integer.
-- **df['column'].dt.week**: Returns the week number of the year.
-- **df['column'].dt.weekday**: Returns the day of the week as an integer, where Monday is 0 and Sunday is 6.
-- **df['column'].dt.quarter**: Returns the quarter of the year as an integer (1-4).
-- **df['column'].dt.to_period('M')**: Converts the datetime to a period with a specified frequency (e.g., 'M' for monthly).
-- **df['column'].dt.to_period('D')**: Converts the datetime to a period with a daily frequency.
-- **df['column'].dt.strftime('format_string')**: Allows you to format the datetime as a string using a custom format.
+- **df['column'].dt.`year`**: Peek at the year effortlessly from a datetime column.
+- **df['column'].dt.`month`**: Dip your fingers to unearth the month from datetime data.
+- **df['column'].dt.`day`**: Extracts the day component from the datetime column.
+- **df['column'].dt.`hour`**: Extracts the hour component from the datetime column.
+- **df['column'].dt.`minute`**: Extracts the minute component from the datetime column.
+- **df['column'].dt.`second`**: Extracts the second component from the datetime column.
+- **df['column'].dt.`microsecond`**: Extracts the microsecond component from the datetime column.
+- **df['column'].dt.`date`**: Extracts the date component (without the time) from the datetime column.
+- **df['column'].dt.`time`**: Extracts the time component (without the date) from the datetime column.
+- **df['column'].dt.`dayofweek`**: Returns the day of the week as an integer, where Monday is 0 and Sunday is 6.
+- **df['column'].dt.`day_name()`**: Returns the day of the week as a string (e.g., 'Monday', 'Tuesday').
+- **df['column'].dt.`is_month_start`**: Returns a Boolean indicating if the date is the start of the month.
+- **df['column'].dt.`is_month_end`**: Returns a Boolean indicating if the date is the end of the month.
+- **df['column'].dt.`is_year_start`**: Returns a Boolean indicating if the date is the start of the year.
+- **df['column'].dt.`is_year_end`**: Returns a Boolean indicating if the date is the end of the year.
+- **df['column'].dt.`dayofyear`**: Returns the day of the year as an integer.
+- **df['column'].dt.`week**: Returns the week number of the year.
+- **df['column'].dt.`weekday`**: Returns the day of the week as an integer, where Monday is 0 and Sunday is 6.
+- **df['column'].dt.`quarter`**: Returns the quarter of the year as an integer (1-4).
+- **df['column'].dt.`to_period('M')`**: Converts the datetime to a period with a specified frequency (e.g., 'M' for monthly).
+- **df['column'].dt.`to_period('D')`**: Converts the datetime to a period with a daily frequency.
+- **df['column'].dt.`strftime('format_string')`**: Allows you to format the datetime as a string using a custom format.
 
 ### Example 1:
 
@@ -637,7 +640,8 @@ print(weekends_df)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-# Data Type Conversion
+<a name="Data-Type-Conversion"></a>
+# 12. Data Type Conversion
 
 - `df['column_name'] = df['column_name'].astype('int64')`
 - `df['date_column'] = pd.to_datetime(df['date_column'])`
@@ -712,7 +716,7 @@ print(leap_year_df[['Nama', 'Tanggal_Lahir', 'Tahun_Kabisat']])
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <a name="Format-Method"></a>
-# 12. Format Method
+# 13. Format Method
 
 ### Example 1:
 
