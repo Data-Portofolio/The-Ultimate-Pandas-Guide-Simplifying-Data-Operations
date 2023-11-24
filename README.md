@@ -24,11 +24,11 @@
 
 Welcome to My repository! This comprehensive guide serves as your key to mastering the powerful Pandas library, simplifying data operations, and unleashing the full potential of your data analysis tasks.
 
-**About This Guide:**
+**✨ About This Guide:**
 
 Pandas is a go-to library for data manipulation, analysis, and transformation. However, its rich set of functions can be intimidating for beginners. This guide is designed to make your journey with Pandas both accessible and enjoyable. It offers a hands-on approach, packed with practical tips, tricks, and real-world examples to help you become proficient in using Pandas for a wide range of tasks.
 
-# Table of Contents
+# 📚 Table of Contents
 
    
 1. [Make DataFrame ](#Make-DataFrame)
@@ -72,7 +72,7 @@ print(df)
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/44e51992-b36b-4a8d-93af-6436d597301a)
 
 <a name="Read-and-Write-Data"></a>
-# 2. Read and Write Data:
+# 2. Read and Write Data
 
 - `pd.read_csv()`: Explore the world of data with ease! Read data from a CSV file and convert it into a DataFrame.
   
@@ -103,7 +103,7 @@ print(df.head())
 - **df.to_sql()**: Let Pandas assist you in saving your DataFrame to your SQL database.
   
 <a name="Info-and-Statistics"></a>
-# 3. Info and Statistics:
+# 3. Info and Statistics 📈
 
 - **df.info()**: Hand over control to Pandas to provide a comprehensive summary of your DataFrame's structure.
 - **df.head()**: Take a sneak peek at your initial data to gain a quick understanding.
@@ -115,7 +115,7 @@ print(df.head())
 - **df.isnull()**: Let Pandas unveil the places where your data is missing.
 
 <a name="Categorical-Data-Info"></a>
-# 4. Categorical Data Info:
+# 4. Categorical Data Info
 
 ### 💡 `df.unique()`
 Metode ini digunakan untuk mendapatkan nilai unik dari suatu Series (kolom dalam DataFrame). Ini memberikan daftar nilai yang berbeda dari kolom tersebut.
@@ -245,8 +245,6 @@ Secara keseluruhan, `df.iteritems()` digunakan untuk iterasi kolom-kolom, dan `e
 Metode ini mengembalikan jumlah nilai unik dalam suatu Series. Ini memberikan informasi tentang seberapa bervariasinya data dalam kolom.
 
 #### Example:
-
-Your code looks correct for calculating the number of unique values in the 'Category' column using the `nunique()` method. If you want to improve readability, you might consider formatting the output using an f-string. Here's your code with a slight improvement in formatting:
 
 ```python
 import pandas as pd
@@ -765,8 +763,6 @@ Summary of 'Category' Column:
 
 
 ### Example 2:
-
-Apologies for any confusion. It seems there was a mistake in the previous response. Here's the corrected output for the more complex example:
 
 ```python
 import pandas as pd
