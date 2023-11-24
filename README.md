@@ -22,11 +22,11 @@
 
  </h1>
 
-Welcome to My repository! This comprehensive guide serves as your key to mastering the powerful 🐼 `Pandas library`, simplifying `data operations`, and unleashing the full potential of your 📊 `data analysis tasks`.
+Welcome to My repository! This comprehensive guide serves as your key to mastering the powerful 🐼 `Pandas library`, simplifying `data operations` 🖥️, and unleashing the full potential of your 📊 `data analysis tasks`.
 
 **✨ About This Guide:**
 
-Pandas is a go-to library for data manipulation, analysis, and transformation. However, its rich set of functions can be intimidating for beginners. This guide is designed to make your journey with Pandas both accessible and enjoyable🥂. It offers a hands-on approach, packed with practical tips, tricks, and real-world examples to help you become proficient in using Pandas for 🎯 a wide range of tasks.
+Pandas 🐼 is a go-to library for data manipulation, analysis, and transformation🚀. However, its rich set of functions can be intimidating for beginners. This guide is designed to make your journey with Pandas both accessible and enjoyable🥂. It offers a hands-on approach, packed with practical tips, tricks, and real-world examples to help you become proficient in using Pandas for 🎯 a wide range of tasks.
 
 # 📚 Table of Contents
 
@@ -519,7 +519,7 @@ Dalam Pandas, terdapat beberapa metode untuk menggabungkan atau menggabungkan du
 - `df.replace(to_replace, value)`: Replace values with new ones as per your requirements.
 
 <a name="String-Operations)"></a>
-# 10. String Operations:
+# 10. String Operations
 
 - **df['column'].`str.upper()`**: Elevate all letters to uppercase!
 - **df['column'].`str.contains()`**: Unearth patterns in text with df['column'].str.contains().
@@ -546,7 +546,7 @@ Dalam Pandas, terdapat beberapa metode untuk menggabungkan atau menggabungkan du
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <a name="Datetime-Operations"></a>
-# 11. Datetime Operations:
+# 11. Datetime Operations 📅
 - **df['column'].dt.`year`**: Peek at the year effortlessly from a datetime column.
 - **df['column'].dt.`month`**: Dip your fingers to unearth the month from datetime data.
 - **df['column'].dt.`day`**: Extracts the day component from the datetime column.
