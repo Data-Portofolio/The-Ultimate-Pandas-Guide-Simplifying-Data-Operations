@@ -89,7 +89,7 @@ df = pd.read_csv(file_path, sep=';', skiprows=2, parse_dates=['Tanggal'], na_val
 print(df.head())
 ```
 <details>
-<summary align="right">🎀 Penjelasan</summary>
+<summary align="left">🎀 More Explanation:</summary>
 
 >`sep=';'`: Menggunakan titik koma (`;`) sebagai delimiter dalam file CSV.
 >`skiprows=2`: Mengabaikan dua baris pertama dalam file CSV.
