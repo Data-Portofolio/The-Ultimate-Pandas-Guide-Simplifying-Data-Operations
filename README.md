@@ -213,7 +213,7 @@ Unique values in 'Status' column:
        🥇 More Details about `df.iteritems()` & `enumerate`! 
     </summary>
    
-### 🌊 `df.iteritems()`
+### 🌊 df.iteritems()
 
 `df.iteritems()` adalah metode pada Pandas untuk mengiterasi melalui kolom-kolom dalam DataFrame. Metode ini memberikan pasangan (nama_kolom, Series) untuk setiap kolom, memungkinkan akses ke nilai-nilai dalam kolom tersebut.
 
@@ -229,7 +229,7 @@ for nama_kolom, nilai_kolom in df.iteritems():
 
 Loop ini berjalan melalui setiap kolom DataFrame (`df`), mencetak nama kolom dan nilai kolom (sebagai objek Series). Dalam contoh ini, `nilai_kolom` berisi nilai-nilai kolom.
 
-### 🌊 `enumerate`
+### 🌊 enumerate
 
 `enumerate` adalah fungsi Python yang memberikan indeks dan nilai saat mengiterasi melalui suatu iterable. Berguna untuk mendapatkan kedua informasi tersebut selama iterasi.
 
@@ -435,15 +435,11 @@ print(df_from_csv)
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <a name="Merging and Joining)"></a>
-# 8. Merging and Joining:
-
-- **df.merge()**: Intuitively combine DataFrames with ease.
-- **df.join()**: Merge with another DataFrame to intelligently combine information.
-- **pd.concat()**: Powerfully combine multiple DataFrames into one.
+# 8. Merging and Joining 🎎
 
 Dalam Pandas, terdapat beberapa metode untuk menggabungkan atau menggabungkan dua DataFrames. Berikut adalah perbedaan antara tiga metode utama: `merge`, `concat`, dan `join`.
 
-### 1. **`merge`:**
+### 🎎 **`merge`:**
    - `merge` digunakan ketika kita ingin menggabungkan DataFrames berdasarkan nilai-nilai tertentu dalam kolom-kolom tertentu (seperti bergabung berdasarkan kolom kunci).
    - Secara default, `merge` menggunakan tipe gabungan "inner join" (gabungan dalam) di mana hanya nilai-nilai yang cocok di kedua DataFrames yang akan disertakan.
    - Contoh:
@@ -466,7 +462,7 @@ Dalam Pandas, terdapat beberapa metode untuk menggabungkan atau menggabungkan du
     1   B        2        5
     ```
 
-### 2. **`concat`:**
+### 🎎 **`concat`:**
    - `concat` digunakan untuk menggabungkan DataFrames secara vertikal (menambahkan baris) atau secara horizontal (menambahkan kolom).
    - Secara default, `concat` melakukan penggabungan secara vertikal (axis=0).
    - Contoh:
@@ -491,7 +487,7 @@ Dalam Pandas, terdapat beberapa metode untuk menggabungkan atau menggabungkan du
     1  6  8
     ```
 
-### 3. **`join`:**
+### 🎎 **`join`:**
    - `join` digunakan untuk menggabungkan DataFrames berdasarkan indeks mereka.
    - Secara default, `join` menggunakan tipe gabungan "left join" (gabungan kiri), yang akan menggabungkan semua indeks dari DataFrame pertama dan nilai-nilai yang cocok dari DataFrame kedua.
    - Contoh:
@@ -513,9 +509,13 @@ Dalam Pandas, terdapat beberapa metode untuk menggabungkan atau menggabungkan du
     X  1  3  5.0  7.0
     Y  2  4  NaN  NaN
     ```
-
-#### **_Ringkasan_**:
-`merge` digunakan untuk menggabungkan berdasarkan kolom, `concat` untuk menggabungkan secara vertikal atau horizontal, dan `join` untuk menggabungkan berdasarkan indeks. Pilihan metode tergantung pada kebutuhan spesifik analisis Anda.
+<details>
+<summary>🎀 Ringkasan</summary>
+   
+- `merge` digunakan untuk menggabungkan berdasarkan kolom, 
+- `concat` untuk menggabungkan secara vertikal atau horizontal,
+- `join` untuk menggabungkan berdasarkan indeks. Pilihan metode tergantung pada kebutuhan spesifik analisis Anda.
+ </details> 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <a name="Data-Filling-and-Replacement"></a>
