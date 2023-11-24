@@ -466,6 +466,7 @@ print(merged_df)
 ```
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/bdd2d055-2e50-4090-94ea-74bf460c4d06)
 </details>
+
 ### 🎎 **`concat`:**
    - `concat` digunakan untuk menggabungkan DataFrames secara vertikal (menambahkan baris) atau secara horizontal (menambahkan kolom).
    - Secara default, `concat` melakukan penggabungan secara vertikal (axis=0).
@@ -486,6 +487,7 @@ print(concatenated_df)
 
 By setting `ignore_index=True`, it resets the index to a default integer index after concatenation. This can be helpful if you want a clean, continuous index for the resulting DataFrame.
 </details>
+
 ### 🎎 **`join`:**
    - `join` digunakan untuk menggabungkan DataFrames berdasarkan indeks mereka.
    - Secara default, `join` menggunakan tipe gabungan "left join" (gabungan kiri), yang akan menggabungkan semua indeks dari DataFrame pertama dan nilai-nilai yang cocok dari DataFrame kedua.
