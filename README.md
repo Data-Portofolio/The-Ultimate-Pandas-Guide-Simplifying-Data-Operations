@@ -90,6 +90,7 @@ print(df.head())
 ```
 <details>
 <summary align="left">🎀 More Explanation:</summary>
+<br>
 
 >`sep=';'`: Menggunakan titik koma (`;`) sebagai delimiter dalam file CSV.
 >`skiprows=2`: Mengabaikan dua baris pertama dalam file CSV.
