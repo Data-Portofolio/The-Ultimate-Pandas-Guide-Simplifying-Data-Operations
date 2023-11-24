@@ -30,12 +30,15 @@ Pandas is a go-to library for data manipulation, analysis, and transformation. H
 
 # Table of Contents
 1. [ Make DataFrame ](#Make-DataFrame)
-2. [ Usage tips. ](#usa)
-3. [Format Method](#Format-Method)
+2. [Read and Write Data](#Read-and-Write-Data)
+3. [Info and Statistics](#Info-and-Statistics)
+4. [Categorical Data Info](#Categorical-Data-Info)
+5. 
+6. [Format Method](#Format-Method)
 
 
 <a name="Make-DataFrame"></a>
-# Make DataFrame
+# 1. Make DataFrame
 - `pd.DataFrame()`: function in Pandas allows you to create a DataFrame by specifying the data and various parameters. 
 
 ```python
@@ -58,11 +61,10 @@ print(df)
 ```
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/44e51992-b36b-4a8d-93af-6436d597301a)
 
+<a name="Read-and-Write-Data"></a>
+# 2. Read and Write Data:
 
-**Read and Write Data:**
-=========================
-
-- **pd.read_csv()**: Explore the world of data with ease! Read data from a CSV file and convert it into a DataFrame.
+- `pd.read_csv()`: Explore the world of data with ease! Read data from a CSV file and convert it into a DataFrame.
   
 ```python
 import pandas as pd
@@ -89,9 +91,10 @@ print(df.head())
 - **df.to_csv()**: Save your analysis results back to a shareable CSV format.
 - **df.to_excel()**: Showcase your hard work in a neatly formatted Excel file.
 - **df.to_sql()**: Let Pandas assist you in saving your DataFrame to your SQL database.
+  
+<a name="Info-and-Statistics"></a>
+# 3. Info and Statistics:
 
-**Info and Statistics:**
-=========================
 - **df.info()**: Hand over control to Pandas to provide a comprehensive summary of your DataFrame's structure.
 - **df.head()**: Take a sneak peek at your initial data to gain a quick understanding.
 - **df.tail()**: Scroll through the tail end of your data to inspect the outcomes.
@@ -101,8 +104,8 @@ print(df.head())
 - **df.dtypes**: Use dtypes to reveal the secrets of column data types.
 - **df.isnull()**: Let Pandas unveil the places where your data is missing.
 
-**Categorical Data Info:**
-=========================
+<a name="Categorical-Data-Info"></a>
+# 4. Categorical Data Info:
 
 ### **`df.unique()`**
 Metode ini digunakan untuk mendapatkan nilai unik dari suatu Series (kolom dalam DataFrame). Ini memberikan daftar nilai yang berbeda dari kolom tersebut.
@@ -286,11 +289,11 @@ C: 2
 D: 1
 ```
 
+<a name="Data-Selection"></a>
+# Data Selection:
 
-**Data Selection:**
-=========================
-- **df['column']**: Pick and extract the necessary column from the DataFrame.
-- **df[['column1', 'column2']]**: Bundle your data by selecting multiple columns at once.
+- `df['column']`: Pick and extract the necessary column from the DataFrame.
+- `df[['column1', 'column2']]`: Bundle your data by selecting multiple columns at once.
 
 ### Example
 ```python
@@ -328,9 +331,8 @@ print(result_complex_filter)
 
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/b1c999cf-6b51-4ec9-948b-5f174e2e0671)
 
-
-- **df.loc[]**: Perform selection based on row and column labels.
-- **df.iloc[]**: Execute selection based on row and column indices.
+- `df.loc[]`: Perform selection based on row and column labels.
+- `df.iloc[]`: Execute selection based on row and column indices.
 
 ### Example 1:
 
@@ -398,23 +400,26 @@ print(df_from_csv)
 ```
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/8b81da07-987a-4642-bcc3-6e4a3a818a96)
 
-**Data Manipulation:**
-=========================
+<a name="Data-Manipulation"></a>
+# Data Manipulation:
+
 - **df.drop()**: Easily remove unwanted columns or rows.
 - **df.rename()**: Personalize your DataFrame by changing column or index names.
 - **df.set_index()**: Give your DataFrame the index that suits you.
 - **df.reset_index()**: Reset the index and reorganize your DataFrame to its original state.
 - **df.sort_values()**: Use sort_values() to arrange data as you desire.
 
-**Aggregation and Grouping:**
-=========================
+<a name="Aggregation-and-Grouping"></a>
+# Aggregation and Grouping:
+
 - **df.groupby()**: Create groups based on specific columns to perform aggregation operations.
 - **df.agg()**: Let Pandas extract the information you need from grouped data.
 - **df.pivot()**: Present your data in a beautiful pivot format.
 - **df.melt()**: Transform data into a long format and discover the pattern.
+  
+<a name="Merging and Joining)"></a>
+# Merging and Joining:**
 
-**Merging and Joining:**
-=========================
 - **df.merge()**: Intuitively combine DataFrames with ease.
 - **df.join()**: Merge with another DataFrame to intelligently combine information.
 - **pd.concat()**: Powerfully combine multiple DataFrames into one.
@@ -500,8 +505,9 @@ Dalam Pandas, terdapat beberapa metode untuk menggabungkan atau menggabungkan du
 - **df.fillna()**: Fill missing values with policies you define.
 - **df.replace(to_replace, value)**: Replace values with new ones as per your requirements.
 
-**String Operations (on string-type columns):**
-=========================
+<a name="String-Operations)"></a>
+# String Operations:
+
 - **df['column'].str.upper()**: Elevate all letters to uppercase!
 - **df['column'].str.contains()**: Unearth patterns in text with df['column'].str.contains().
 - **df['column'].str.title()**: Capitalize the first letter of each word in the string.
@@ -524,8 +530,8 @@ Dalam Pandas, terdapat beberapa metode untuk menggabungkan atau menggabungkan du
 - **df['column'].str.join('separator')**: Join a list of strings with a specified separator.
 - **df['column'].str.cat(sep='separator')**: Concatenate strings within a column, separated by a specified separator.
 
-**Datetime Operations (on datetime-type columns):**
-=========================
+<a name="Datetime-Operations"></a>
+# Datetime Operations:**
 - **df['column'].dt.year**: Peek at the year effortlessly from a datetime column.
 - **df['column'].dt.month**: Dip your fingers to unearth the month from datetime data.
 - **df['column'].dt.day**: Extracts the day component from the datetime column.
@@ -690,7 +696,7 @@ print(leap_year_df[['Nama', 'Tanggal_Lahir', 'Tahun_Kabisat']])
 
 <a name="Format-Method"></a>
 # **Format Method**
-======================
+
 ### Example 1:
 
 
