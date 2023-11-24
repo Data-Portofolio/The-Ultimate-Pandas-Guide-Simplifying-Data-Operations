@@ -295,7 +295,7 @@ B: 2
 C: 2
 D: 1
 ```
-
+<p align="right">(<a href="#top">back to top</a>)</p>
 <a name="Data-Selection"></a>
 # 5. Data Selection:
 
@@ -406,6 +406,7 @@ print("\nDataFrame setelah ditulis ke CSV dan dibaca kembali:")
 print(df_from_csv)
 ```
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/8b81da07-987a-4642-bcc3-6e4a3a818a96)
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <a name="Data-Manipulation"></a>
 # 6. Data Manipulation:
@@ -415,7 +416,7 @@ print(df_from_csv)
 - `df.set_index()`: Give your DataFrame the index that suits you.
 - `df.reset_index()`: Reset the index and reorganize your DataFrame to its original state.
 - `df.sort_values()`: Use sort_values() to arrange data as you desire.
-
+<p align="right">(<a href="#top">back to top</a>)</p>
 <a name="Aggregation-and-Grouping"></a>
 # 7. Aggregation and Grouping:
 
@@ -423,7 +424,8 @@ print(df_from_csv)
 - **df.agg()**: Let Pandas extract the information you need from grouped data.
 - **df.pivot()**: Present your data in a beautiful pivot format.
 - **df.melt()**: Transform data into a long format and discover the pattern.
-  
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 <a name="Merging and Joining)"></a>
 # 8. Merging and Joining:
 
@@ -506,19 +508,19 @@ Dalam Pandas, terdapat beberapa metode untuk menggabungkan atau menggabungkan du
 
 #### **_Ringkasan_**:
 `merge` digunakan untuk menggabungkan berdasarkan kolom, `concat` untuk menggabungkan secara vertikal atau horizontal, dan `join` untuk menggabungkan berdasarkan indeks. Pilihan metode tergantung pada kebutuhan spesifik analisis Anda.
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-**Data Filling and Replacement:**
-=========================
-- **df.fillna()**: Fill missing values with policies you define.
-- **df.replace(to_replace, value)**: Replace values with new ones as per your requirements.
+# 9. Data Filling and Replacement:
+- `df.fillna()`: Fill missing values with policies you define.
+- `df.replace(to_replace, value)`: Replace values with new ones as per your requirements.
 
 <a name="String-Operations)"></a>
-# 9. String Operations:
+# 10. String Operations:
 
-- **df['column'].str.upper()**: Elevate all letters to uppercase!
-- **df['column'].str.contains()**: Unearth patterns in text with df['column'].str.contains().
-- **df['column'].str.title()**: Capitalize the first letter of each word in the string.
-- **df['column'].str.capitalize()**: Capitalize the first letter of the string.
+- df['column'].`str.upper()`: Elevate all letters to uppercase!
+- df['column'].`str.contains()`: Unearth patterns in text with df['column'].str.contains().
+- df['column'].`str.title()`: Capitalize the first letter of each word in the string.
+- df['column'].`str.capitalize()`: Capitalize the first letter of the string.
 - **df['column'].str.swapcase()**: Swap the case of each character (e.g., "aBc" becomes "AbC").
 - **df['column'].str.strip()**: Remove leading and trailing whitespace.
 - **df['column'].str.lstrip()**: Remove leading whitespace.
@@ -536,9 +538,11 @@ Dalam Pandas, terdapat beberapa metode untuk menggabungkan atau menggabungkan du
 - **df['column'].str.split('delimiter')**: Split a string into a list of substrings based on a delimiter.
 - **df['column'].str.join('separator')**: Join a list of strings with a specified separator.
 - **df['column'].str.cat(sep='separator')**: Concatenate strings within a column, separated by a specified separator.
+  
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <a name="Datetime-Operations"></a>
-# 10. Datetime Operations:
+# 11. Datetime Operations:
 - **df['column'].dt.year**: Peek at the year effortlessly from a datetime column.
 - **df['column'].dt.month**: Dip your fingers to unearth the month from datetime data.
 - **df['column'].dt.day**: Extracts the day component from the datetime column.
@@ -628,9 +632,10 @@ print(weekends_df)
 #### output:
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/a499499c-33a0-4751-ae5c-ab85061a3cd5)
 
+<p align="right">(<a href="#top">back to top</a>)</p>
 
-**Converting Column Data Types in Pandas**
-===========================
+# Data Type Conversion
+
 - `df['column_name'] = df['column_name'].astype('int64')`
 - `df['date_column'] = pd.to_datetime(df['date_column'])`
   
@@ -701,8 +706,10 @@ print(leap_year_df[['Nama', 'Tanggal_Lahir', 'Tahun_Kabisat']])
 - `df['boolean_column'] = df['boolean_column'].astype(bool)`
 - `df['string_column'] = df['string_column'].astype(str)`
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 <a name="Format-Method"></a>
-# 11. Format Method
+# 12. Format Method
 
 ### Example 1:
 
