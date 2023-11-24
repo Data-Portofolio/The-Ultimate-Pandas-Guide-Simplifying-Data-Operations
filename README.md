@@ -121,6 +121,9 @@ print(df.head())
 ### 💡 `df.unique()`
 Metode ini digunakan untuk mendapatkan nilai unik dari suatu Series (kolom dalam DataFrame). Ini memberikan daftar nilai yang berbeda dari kolom tersebut.
 
+<details>
+    <summary align="center">🔥 Example</summary>
+   
 ```python
 import pandas as pd
 
@@ -147,11 +150,45 @@ for column_name, column_values in df.iteritems():
     for index, value in enumerate(unique_values):
         print(f"  Index {index}: {value}")
 ```
-<details>
-    <summary align="left">
-       🕹️ Output: 
+<details> 
+    <summary align="right">
+       🥇 More Details about `df.iteritems()` & `enumerate`! 
     </summary>
+   
+### 🌊 df.iteritems()
 
+`df.iteritems()` adalah metode pada Pandas untuk mengiterasi melalui kolom-kolom dalam DataFrame. Metode ini memberikan pasangan (nama_kolom, Series) untuk setiap kolom, memungkinkan akses ke nilai-nilai dalam kolom tersebut.
+
+Dalam contoh ini:
+
+```python
+for nama_kolom, nilai_kolom in df.iteritems():
+    print(f"Nama Kolom: {nama_kolom}")
+    print(f"Isi Kolom:")
+    print(nilai_kolom)
+    print()
+```
+
+Loop ini berjalan melalui setiap kolom DataFrame (`df`), mencetak nama kolom dan nilai kolom (sebagai objek Series). Dalam contoh ini, `nilai_kolom` berisi nilai-nilai kolom.
+
+### 🌊 enumerate
+
+`enumerate` adalah fungsi Python yang memberikan indeks dan nilai saat mengiterasi melalui suatu iterable. Berguna untuk mendapatkan kedua informasi tersebut selama iterasi.
+
+Dalam contoh ini:
+
+```python
+for indeks, nilai in enumerate(nilai_unik):
+    print(f"  Indeks {indeks}: {nilai}")
+```
+
+Loop ini mengiterasi melalui nilai-nilai unik dari suatu kolom (dengan `unique()`), mencetak indeks dan nilai untuk setiap elemen. `nilai_unik` berisi nilai-nilai unik tersebut.
+
+Secara keseluruhan, `df.iteritems()` digunakan untuk iterasi kolom-kolom, dan `enumerate` digunakan di dalam loop untuk mendapatkan indeks dan nilai dari setiap nilai unik dalam suatu kolom. Ini memberikan ringkasan lebih detail dari DataFrame, termasuk nilai unik dan indeks mereka untuk setiap kolom.
+
+</details>
+
+**Output:**
 
 ```
 Output of df.iteritems():
@@ -207,43 +244,6 @@ Unique values in 'Status' column:
   Index 0: Active
   Index 1: Inactive
 ```
-</details>
-
-<details> 
-    <summary align="right">
-       🥇 More Details about `df.iteritems()` & `enumerate`! 
-    </summary>
-   
-### 🌊 df.iteritems()
-
-`df.iteritems()` adalah metode pada Pandas untuk mengiterasi melalui kolom-kolom dalam DataFrame. Metode ini memberikan pasangan (nama_kolom, Series) untuk setiap kolom, memungkinkan akses ke nilai-nilai dalam kolom tersebut.
-
-Dalam contoh ini:
-
-```python
-for nama_kolom, nilai_kolom in df.iteritems():
-    print(f"Nama Kolom: {nama_kolom}")
-    print(f"Isi Kolom:")
-    print(nilai_kolom)
-    print()
-```
-
-Loop ini berjalan melalui setiap kolom DataFrame (`df`), mencetak nama kolom dan nilai kolom (sebagai objek Series). Dalam contoh ini, `nilai_kolom` berisi nilai-nilai kolom.
-
-### 🌊 enumerate
-
-`enumerate` adalah fungsi Python yang memberikan indeks dan nilai saat mengiterasi melalui suatu iterable. Berguna untuk mendapatkan kedua informasi tersebut selama iterasi.
-
-Dalam contoh ini:
-
-```python
-for indeks, nilai in enumerate(nilai_unik):
-    print(f"  Indeks {indeks}: {nilai}")
-```
-
-Loop ini mengiterasi melalui nilai-nilai unik dari suatu kolom (dengan `unique()`), mencetak indeks dan nilai untuk setiap elemen. `nilai_unik` berisi nilai-nilai unik tersebut.
-
-Secara keseluruhan, `df.iteritems()` digunakan untuk iterasi kolom-kolom, dan `enumerate` digunakan di dalam loop untuk mendapatkan indeks dan nilai dari setiap nilai unik dalam suatu kolom. Ini memberikan ringkasan lebih detail dari DataFrame, termasuk nilai unik dan indeks mereka untuk setiap kolom.
 
 </details>
 
