@@ -479,7 +479,7 @@ print(weekends_df)
 - `df['column_name'] = df['column_name'].astype('int64')`
 - `df['date_column'] = pd.to_datetime(df['date_column'])`
   
- **_Contoh 1:_**
+### Example 1:
 ```python
 import pandas as pd
 
@@ -515,7 +515,7 @@ _Output:_
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/42f857f5-709a-43a1-9886-22abc1aa8d3b)
 
 ---
-**_Contoh 2:_**
+### Example 2:
 ```phyton
 import pandas as pd
 
