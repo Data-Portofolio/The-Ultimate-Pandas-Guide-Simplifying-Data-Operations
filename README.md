@@ -478,6 +478,69 @@ print(weekends_df)
 ===========================
 - `df['column_name'] = df['column_name'].astype('int64')`
 - `df['date_column'] = pd.to_datetime(df['date_column'])`
+  
+ **_Contoh 1:_**
+```python
+import pandas as pd
+
+# Create a DataFrame
+data = {'Nama': ['Alice', 'Bob', 'Charlie', 'David'],
+        'Usia': [25, 30, 35, 28],
+        'Kota': ['Jakarta', 'Surabaya', 'Bandung', 'Medan'],
+        'Pekerjaan': ['Guru', 'Dokter', 'Insinyur', 'Desainer'],
+        'Gaji': [50000, 80000, 70000, 60000],
+        'Tanggal_Absen': ['2022-01-01', '2022-02-15', '2022-03-20', '2022-04-10']}
+
+df = pd.DataFrame(data)
+
+# Convert the 'Tanggal_Absen' column to datetime
+df['Tanggal_Absen'] = pd.to_datetime(df['Tanggal_Absen'])
+
+# Extract day name and select rows with weekend dates
+df['Hari'] = df['Tanggal_Absen'].dt.day_name()
+weekend_df = df[df['Tanggal_Absen'].dt.dayofweek.isin([5, 6])]
+
+# Select rows with weekday dates
+weekday_df = df[df['Tanggal_Absen'].dt.dayofweek.isin([0, 1, 2, 3, 4])]
+
+# Display the DataFrame with weekend and weekday dates
+print("DataFrame with Weekend Dates:")
+print(weekend_df[['Nama', 'Hari', 'Tanggal_Absen']])
+
+print("\nDataFrame with Weekday Dates:")
+print(weekday_df[['Nama', 'Hari', 'Tanggal_Absen']])
+```
+
+_Output:_
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/42f857f5-709a-43a1-9886-22abc1aa8d3b)
+
+---
+**_Contoh 2:_**
+```phyton
+import pandas as pd
+
+# Create a DataFrame with birthdates
+data = {'Nama': ['Alice', 'Bob', 'Charlie', 'David'],
+        'Tanggal_Lahir': ['1992-02-29', '1996-03-15', '1988-02-29', '1995-04-10']}
+
+df = pd.DataFrame(data)
+
+# Convert the 'Tanggal_Lahir' column to datetime
+df['Tanggal_Lahir'] = pd.to_datetime(df['Tanggal_Lahir'])
+
+# Extract year and check for leap year
+df['Tahun_Kabisat'] = df['Tanggal_Lahir'].dt.year
+df['Is_Kabisat'] = df['Tahun_Kabisat'].apply(lambda year: year % 4 == 0 and (year % 100 != 0 or year % 400 == 0))
+
+# Select rows where the birthdate is on a leap year
+leap_year_df = df[df['Is_Kabisat']]
+
+# Display the DataFrame with leap year birthdays
+print("DataFrame with Birthdays on Leap Years:")
+print(leap_year_df[['Nama', 'Tanggal_Lahir', 'Tahun_Kabisat']])
+```
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/3302e1f5-a7f3-4099-a54b-5e79efe88e22)
+
 - `df['category_column'] = df['category_column'].astype('category')`
 - `df['numeric_column'] = pd.to_numeric(df['numeric_column'], errors='coerce')`
 - `df['boolean_column'] = df['boolean_column'].astype(bool)`
