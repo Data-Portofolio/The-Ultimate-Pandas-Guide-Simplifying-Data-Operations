@@ -615,6 +615,7 @@ df['date_column_offset_2_months'] = df['date_column'] + pd.DateOffset(months=2)
 
 ```
 </details>
+
 <details>
 <summary align="center">🔥 Example 2</summary>
    
@@ -656,7 +657,7 @@ print(weekends_df)
 - df['date_column'] = pd.`to_datetime(df['date_column'])`
   
 <details>
-<summary align="center" >🔥 Example 1</summary>
+   <summary align="center" >🔥 Example 1</summary>
    
 ```python
 import pandas as pd
@@ -695,7 +696,8 @@ _Output:_
 
 
 <details>
-<summary align="center" >🔥 Example 2</summary>
+   <summary align="center" >🔥 Example 2</summary>
+   
 ```phyton
 import pandas as pd
 
