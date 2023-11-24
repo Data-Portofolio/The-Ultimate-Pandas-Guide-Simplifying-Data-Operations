@@ -698,8 +698,6 @@ _Output:_
 <details>
    <summary align="center" >🔥 Example 2</summary>
    
-Your code is almost correct for identifying leap years in the 'Tanggal_Lahir' (birthdate) column. However, there's a small error in the leap year condition. Here's the corrected version:
-
 ```python
 import pandas as pd
 
