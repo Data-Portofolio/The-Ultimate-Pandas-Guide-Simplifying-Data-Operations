@@ -310,7 +310,9 @@ D: 1
 - `df['column']`: Pick and extract the necessary column from the DataFrame.
 - `df[['column1', 'column2']]`: Bundle your data by selecting multiple columns at once.
 
-### Example
+<details>
+<summary align="center">🔥 Example</summary>
+
 ```python
 import pandas as pd
 
@@ -345,11 +347,14 @@ print(result_complex_filter)
 ```
 
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/b1c999cf-6b51-4ec9-948b-5f174e2e0671)
+</details>
 
 - `df.loc[]`: Perform selection based on row and column labels.
 - `df.iloc[]`: Execute selection based on row and column indices.
 
-### Example 1:
+
+<details>
+<summary align="center">🔥 Example 1</summary>
 
 ```python
 import pandas as pd
@@ -377,9 +382,11 @@ print("\nDataFrame hasil seleksi menggunakan df.iloc[]:")
 print(result_iloc)
 ```
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/c32fcb4c-e25a-4aeb-bc80-acafad31c503)
+</details>
 
----
-### Example2:
+<details>
+<summary align="center" >🔥 Example 2</summary>
+   
 ```python
 import pandas as pd
 
@@ -414,6 +421,8 @@ print("\nDataFrame setelah ditulis ke CSV dan dibaca kembali:")
 print(df_from_csv)
 ```
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/8b81da07-987a-4642-bcc3-6e4a3a818a96)
+</details>
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <a name="Data-Manipulation"></a>
@@ -443,73 +452,63 @@ Dalam Pandas, terdapat beberapa metode untuk menggabungkan atau menggabungkan du
 ### 🎎 **`merge`:**
    - `merge` digunakan ketika kita ingin menggabungkan DataFrames berdasarkan nilai-nilai tertentu dalam kolom-kolom tertentu (seperti bergabung berdasarkan kolom kunci).
    - Secara default, `merge` menggunakan tipe gabungan "inner join" (gabungan dalam) di mana hanya nilai-nilai yang cocok di kedua DataFrames yang akan disertakan.
-   - Contoh:
+<details>
+<summary align="center" >🔥 Example </summary>
 
-    ```python
-    import pandas as pd
+```python
+import pandas as pd
 
-    df1 = pd.DataFrame({'key': ['A', 'B', 'C'], 'value': [1, 2, 3]})
-    df2 = pd.DataFrame({'key': ['A', 'B', 'D'], 'value': [4, 5, 6]})
+df1 = pd.DataFrame({'key': ['A', 'B', 'C'], 'value': [1, 2, 3]})
+df2 = pd.DataFrame({'key': ['A', 'B', 'D'], 'value': [4, 5, 6]})
 
-    merged_df = pd.merge(df1, df2, on='key', how='inner')
-    print(merged_df)
-    ```
-
-    Outputnya:
-
-    ```
-      key  value_x  value_y
-    0   A        1        4
-    1   B        2        5
-    ```
-
+merged_df = pd.merge(df1, df2, on='key', how='inner')
+print(merged_df)
+```
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/bdd2d055-2e50-4090-94ea-74bf460c4d06)
+</details>
 ### 🎎 **`concat`:**
    - `concat` digunakan untuk menggabungkan DataFrames secara vertikal (menambahkan baris) atau secara horizontal (menambahkan kolom).
    - Secara default, `concat` melakukan penggabungan secara vertikal (axis=0).
-   - Contoh:
+<details>
+<summary align="center" >🔥 Example</summary>
 
-    ```python
-    import pandas as pd
+```python
+import pandas as pd
 
-    df1 = pd.DataFrame({'A': [1, 2], 'B': [3, 4]})
-    df2 = pd.DataFrame({'A': [5, 6], 'B': [7, 8]})
+df1 = pd.DataFrame({'A': [1, 2], 'B': [3, 4]})
+df2 = pd.DataFrame({'A': [5, 6], 'B': [7, 8]})
 
-    concatenated_df = pd.concat([df1, df2], axis=0)
-    print(concatenated_df)
-    ```
+# Use ignore_index to reset the index after concatenation
+concatenated_df = pd.concat([df1, df2], axis=0, ignore_index=True)
+print(concatenated_df)
+```
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/ac227f09-6cfc-4aa8-b847-adb1369a893a)
 
-    Outputnya:
-
-    ```
-       A  B
-    0  1  3
-    1  2  4
-    0  5  7
-    1  6  8
-    ```
-
+By setting `ignore_index=True`, it resets the index to a default integer index after concatenation. This can be helpful if you want a clean, continuous index for the resulting DataFrame.
+</details>
 ### 🎎 **`join`:**
    - `join` digunakan untuk menggabungkan DataFrames berdasarkan indeks mereka.
    - Secara default, `join` menggunakan tipe gabungan "left join" (gabungan kiri), yang akan menggabungkan semua indeks dari DataFrame pertama dan nilai-nilai yang cocok dari DataFrame kedua.
-   - Contoh:
+<details>
+<summary align="center" >🔥 Example</summary>
 
-    ```python
-    import pandas as pd
+```python
+import pandas as pd
 
-    df1 = pd.DataFrame({'A': [1, 2], 'B': [3, 4]}, index=['X', 'Y'])
-    df2 = pd.DataFrame({'C': [5, 6], 'D': [7, 8]}, index=['X', 'Z'])
+df1 = pd.DataFrame({'A': [1, 2], 'B': [3, 4]}, index=['X', 'Y'])
+df2 = pd.DataFrame({'C': [5, 6], 'D': [7, 8]}, index=['X', 'Z'])
 
-    joined_df = df1.join(df2, how='left')
-    print(joined_df)
-    ```
+# Explicitly specify the column to join on
+joined_df = df1.join(df2[['C', 'D']], how='left')
+print(joined_df)
+```
 
-    Outputnya:
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/d051ae97-ce5f-468a-8b9a-3ad1e4ed88b9)
 
-    ```
-       A  B    C    D
-    X  1  3  5.0  7.0
-    Y  2  4  NaN  NaN
-    ```
+
+In this version, `df2[['C', 'D']]` is used to select only the 'C' and 'D' columns from `df2` before performing the join.
+</details>
+   
 <details>
 <summary>🎀 Ringkasan</summary>
    
@@ -569,14 +568,15 @@ Dalam Pandas, terdapat beberapa metode untuk menggabungkan atau menggabungkan du
 - **df['column'].dt.`is_year_start`**: Returns a Boolean indicating if the date is the start of the year.
 - **df['column'].dt.`is_year_end`**: Returns a Boolean indicating if the date is the end of the year.
 - **df['column'].dt.`dayofyear`**: Returns the day of the year as an integer.
-- **df['column'].dt.`week**: Returns the week number of the year.
+- **df['column'].dt.`week`**: Returns the week number of the year.
 - **df['column'].dt.`weekday`**: Returns the day of the week as an integer, where Monday is 0 and Sunday is 6.
 - **df['column'].dt.`quarter`**: Returns the quarter of the year as an integer (1-4).
 - **df['column'].dt.`to_period('M')`**: Converts the datetime to a period with a specified frequency (e.g., 'M' for monthly).
 - **df['column'].dt.`to_period('D')`**: Converts the datetime to a period with a daily frequency.
 - **df['column'].dt.`strftime('format_string')`**: Allows you to format the datetime as a string using a custom format.
 
-### Example 1:
+<details>
+<summary align="center">🔥 Example 1</summary>
 
 ```python
 import pandas as pd
@@ -612,7 +612,10 @@ df['date_column_offset_10_days'] = df['date_column'] + pd.DateOffset(days=10)
 df['date_column_offset_2_months'] = df['date_column'] + pd.DateOffset(months=2)
 
 ```
-### Example 2
+</details>
+<details>
+<summary align="center">🔥 Example 2</summary>
+   
 ```python
 import pandas as pd
 
@@ -641,7 +644,7 @@ print(weekends_df)
 ```
 #### output:
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/a499499c-33a0-4751-ae5c-ab85061a3cd5)
-
+</details>
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <a name="Data-Type-Conversion"></a>
