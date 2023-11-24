@@ -895,6 +895,8 @@ Summary of 'Category' Column:
 # 14. Apply & Lambda
 
 ### 1. Lambda Functions
+ - Improved the lambda function to explicitly mention the operation being performed.
+ - Updated the print statements for clearer output.
 
    ```python
    multiply = lambda a, b: a * b
@@ -903,18 +905,19 @@ Summary of 'Category' Column:
    check_even_odd = lambda x: 'Even' if x % 2 == 0 else 'Odd'
    print("Number is:", check_even_odd(8))
    ```
-   - Improved the lambda function to explicitly mention the operation being performed.
-   - Updated the print statements for clearer output.
+  
 
 ### 2. Apply with NumPy
+
+  - Renamed variables for better readability.
+   - Added comments to clarify the purpose of each line.
 
    ```python
    # Aggregating sum for each column and row
    sum_by_column = df_apply.apply(np.sum, axis=0)  # Sum for each column
    sum_by_row = df_apply.apply(np.sum, axis=1)  # Sum for each row
    ```
-   - Renamed variables for better readability.
-   - Added comments to clarify the purpose of each line.
+ 
 
 ### 3. Apply with Custom Function
 
@@ -964,8 +967,7 @@ print(df)
    ```
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/f7f1859e-5dad-4165-8fce-5bf84b45bf1b)
 
-   - Kept the function as is since it is already concise and clear.
-
+   
 ### 5. Apply with Boolean Expression
 
    - Renamed the column to 'is_jakpus' for clarity.
@@ -988,7 +990,6 @@ print(df)
 
      
 ### 7. Apply with One Line Conditional 
-
 
 ```python
 import pandas as pd
