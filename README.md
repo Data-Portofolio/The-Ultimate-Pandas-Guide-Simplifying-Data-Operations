@@ -296,6 +296,7 @@ C: 2
 D: 1
 ```
 <p align="right">(<a href="#top">back to top</a>)</p>
+
 <a name="Data-Selection"></a>
 # 5. Data Selection:
 
@@ -417,6 +418,7 @@ print(df_from_csv)
 - `df.reset_index()`: Reset the index and reorganize your DataFrame to its original state.
 - `df.sort_values()`: Use sort_values() to arrange data as you desire.
 <p align="right">(<a href="#top">back to top</a>)</p>
+
 <a name="Aggregation-and-Grouping"></a>
 # 7. Aggregation and Grouping:
 
@@ -510,6 +512,7 @@ Dalam Pandas, terdapat beberapa metode untuk menggabungkan atau menggabungkan du
 `merge` digunakan untuk menggabungkan berdasarkan kolom, `concat` untuk menggabungkan secara vertikal atau horizontal, dan `join` untuk menggabungkan berdasarkan indeks. Pilihan metode tergantung pada kebutuhan spesifik analisis Anda.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<a name="Data-Filling-and-Replacement"></a>
 # 9. Data Filling and Replacement:
 - `df.fillna()`: Fill missing values with policies you define.
 - `df.replace(to_replace, value)`: Replace values with new ones as per your requirements.
