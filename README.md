@@ -918,22 +918,43 @@ Summary of 'Category' Column:
 
 ### 3. Apply with Custom Function
 
-   ```python
-   def segment(total_order):
-       if total_order >= 100:
-           return 'High'
-       elif 20 <= total_order < 100:
-           return 'Mid'
-       else:
-           return 'Low'
-
-   df['segment_apply'] = df['total_order'].apply(segment)
-   df.head()
-   ```
    - Simplified the segment function by directly working with the 'total_order' column.
    - Removed unnecessary lambda expression and variable assignments.
+     
+ <details>
+  <summary align="center">🔥 Example</summary>
 
+   ```python
+  import pandas as pd
+
+# Sample DataFrame
+data = {'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+        'Age': [25, 30, 22, 35],
+        'Salary': [50000, 60000, 45000, 70000]}
+
+df = pd.DataFrame(data)
+
+# Define a custom function with a conditional statement
+def categorize_salary(salary):
+    if salary >= 60000:
+        return 'High'
+    elif 50000 <= salary < 60000:
+        return 'Medium'
+    else:
+        return 'Low'
+
+# Apply the custom function to create a new column
+df['Salary_Category'] = df['Salary'].apply(categorize_salary)
+
+# Display the DataFrame with the new column
+print(df)
+   ```
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/5e523023-203f-46f0-9e83-72e5e538563e)
+
+</details>
+   
 ### 4. Apply with Two Arguments
+   - Kept the function as is since it is already concise and clear.
 
    ```python
    def segment_new(province, total_order):
@@ -941,23 +962,53 @@ Summary of 'Category' Column:
 
    df['segment_apply'] = df.apply(lambda x: segment_new(x['province'], x['total_order']), axis=1)
    ```
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/f7f1859e-5dad-4165-8fce-5bf84b45bf1b)
+
    - Kept the function as is since it is already concise and clear.
 
 ### 5. Apply with Boolean Expression
+
+   - Renamed the column to 'is_jakpus' for clarity.
 
    ```python
    df['is_jakpus'] = df['city'].apply(lambda x: x == 'Jakarta Pusat')
    df.head()
    ```
-   - Renamed the column to 'is_jakpus' for clarity.
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/cfb13a0c-6f5b-4eee-89d2-9336a2550d44)
 
 ### 6. Apply with String Slicing
+
+- Maintained the string slicing for simplicity.
 
    ```python
    df['year'] = df['order_month'].apply(lambda x: x[:4])
    df.head()
    ```
-   - Maintained the string slicing for simplicity.
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/ea2539ee-4cb9-457f-be4c-3329fe32fcaa)
+
+     
+### 7. Apply with One Line Conditional 
+
+
+```python
+import pandas as pd
+
+# Sample DataFrame
+data = {'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+        'Age': [25, 30, 22, 35],
+        'Salary': [50000, 60000, 45000, 70000]}
+
+df = pd.DataFrame(data)
+
+# Apply a one-liner with a lambda function and conditional statement
+df['Salary_Category'] = df['Salary'].apply(lambda x: 'High' if x >= 60000 else 'Medium' if 50000 <= x < 60000 else 'Low')
+
+# Display the DataFrame
+print(df)
+```
+
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/54b1a582-8624-4de5-9ca8-ced798c2aa09)
+
      
 <p align="right">(<a href="#top">back to top</a>)</p>
 
