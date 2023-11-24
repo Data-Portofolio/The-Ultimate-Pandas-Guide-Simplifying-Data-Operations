@@ -536,6 +536,10 @@ In this version, `df2[['C', 'D']]` is used to select only the 'C' and 'D' column
 - **df['column'].str.`strip()`**: Remove leading and trailing whitespace.
 - **df['column'].str.`lstrip()`**: Remove leading whitespace.
 - **df['column'].str.`rstrip()`**: Remove trailing whitespace.
+<details>
+   <summary align="left">🌟 More Function! 🌟</summary>
+<br>
+
 - **df['column'].str.`strip('char')`**: Remove specific characters from the start and end.
 - **df['column'].str.`lstrip('char')`**: Remove specific characters from the start.
 - **df['column'].str.`rstrip('char')`**: Remove specific characters from the end.
@@ -549,6 +553,7 @@ In this version, `df2[['C', 'D']]` is used to select only the 'C' and 'D' column
 - **df['column'].str.`split('delimiter')`**: Split a string into a list of substrings based on a delimiter.
 - **df['column'].str.`join('separator')`**: Join a list of strings with a specified separator.
 - **df['column'].str.`cat(sep='separator')`**: Concatenate strings within a column, separated by a specified separator.
+</details>
   
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -560,6 +565,11 @@ In this version, `df2[['C', 'D']]` is used to select only the 'C' and 'D' column
 - **df['column'].dt.`hour`**: Extracts the hour component from the datetime column.
 - **df['column'].dt.`minute`**: Extracts the minute component from the datetime column.
 - **df['column'].dt.`second`**: Extracts the second component from the datetime column.
+  
+<details>
+   <summary align="left">🌟 More Function! 🌟</summary>
+<br>
+   
 - **df['column'].dt.`microsecond`**: Extracts the microsecond component from the datetime column.
 - **df['column'].dt.`date`**: Extracts the date component (without the time) from the datetime column.
 - **df['column'].dt.`time`**: Extracts the time component (without the date) from the datetime column.
@@ -576,6 +586,7 @@ In this version, `df2[['C', 'D']]` is used to select only the 'C' and 'D' column
 - **df['column'].dt.`to_period('M')`**: Converts the datetime to a period with a specified frequency (e.g., 'M' for monthly).
 - **df['column'].dt.`to_period('D')`**: Converts the datetime to a period with a daily frequency.
 - **df['column'].dt.`strftime('format_string')`**: Allows you to format the datetime as a string using a custom format.
+</details>
 
 <details>
 <summary align="center">🔥 Example 1</summary>
