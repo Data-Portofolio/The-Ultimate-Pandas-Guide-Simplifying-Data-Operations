@@ -33,8 +33,13 @@ Pandas is a go-to library for data manipulation, analysis, and transformation. H
 2. [Read and Write Data](#Read-and-Write-Data)
 3. [Info and Statistics](#Info-and-Statistics)
 4. [Categorical Data Info](#Categorical-Data-Info)
-5. 
-6. [Format Method](#Format-Method)
+5. [Data Selection](#Data-Selection)
+6. [Data Manipulation](#Data-Manipulation)
+7. [Aggregation and Grouping](#Aggregation-and-Grouping)
+8. [Merging and Joining](#Merging-and-Joining)
+9. [String Operations](#String-Operations)
+10. [Datetime Operations](#Datetime-Operations)
+11.  [Format Method](#Format-Method)
 
 
 <a name="Make-DataFrame"></a>
@@ -194,7 +199,7 @@ Unique values in 'Status' column:
   Index 1: Inactive
 ```
 <details> 
-    <summary>More Details about `df.iteritems()` & `enumerate`! </summary>
+    <summary>🥇 More Details about `df.iteritems()` & `enumerate`! </summary>
    
 ### `df.iteritems()`
 
@@ -255,8 +260,6 @@ Output:
 ```
 Number of unique values in 'Category' column: 3
 ```
-
-This way, the f-string helps make the code more concise and readable when incorporating the variable `num_unique_values` into the print statement.
     
 ### **`df.value_counts()`**
 Metode ini menghitung frekuensi masing-masing nilai dalam suatu Series. Ini memberikan wawasan tentang seberapa sering masing-masing nilai muncul dalam data.
@@ -290,7 +293,7 @@ D: 1
 ```
 
 <a name="Data-Selection"></a>
-# Data Selection:
+# 5. Data Selection:
 
 - `df['column']`: Pick and extract the necessary column from the DataFrame.
 - `df[['column1', 'column2']]`: Bundle your data by selecting multiple columns at once.
@@ -401,16 +404,16 @@ print(df_from_csv)
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/8b81da07-987a-4642-bcc3-6e4a3a818a96)
 
 <a name="Data-Manipulation"></a>
-# Data Manipulation:
+# 6. Data Manipulation:
 
-- **df.drop()**: Easily remove unwanted columns or rows.
-- **df.rename()**: Personalize your DataFrame by changing column or index names.
-- **df.set_index()**: Give your DataFrame the index that suits you.
-- **df.reset_index()**: Reset the index and reorganize your DataFrame to its original state.
-- **df.sort_values()**: Use sort_values() to arrange data as you desire.
+- `df.drop()`: Easily remove unwanted columns or rows.
+- `df.rename()`: Personalize your DataFrame by changing column or index names.
+- `df.set_index()`: Give your DataFrame the index that suits you.
+- `df.reset_index()`: Reset the index and reorganize your DataFrame to its original state.
+- `df.sort_values()`: Use sort_values() to arrange data as you desire.
 
 <a name="Aggregation-and-Grouping"></a>
-# Aggregation and Grouping:
+# 7. Aggregation and Grouping:
 
 - **df.groupby()**: Create groups based on specific columns to perform aggregation operations.
 - **df.agg()**: Let Pandas extract the information you need from grouped data.
@@ -418,7 +421,7 @@ print(df_from_csv)
 - **df.melt()**: Transform data into a long format and discover the pattern.
   
 <a name="Merging and Joining)"></a>
-# Merging and Joining:**
+# 8. Merging and Joining:
 
 - **df.merge()**: Intuitively combine DataFrames with ease.
 - **df.join()**: Merge with another DataFrame to intelligently combine information.
@@ -506,7 +509,7 @@ Dalam Pandas, terdapat beberapa metode untuk menggabungkan atau menggabungkan du
 - **df.replace(to_replace, value)**: Replace values with new ones as per your requirements.
 
 <a name="String-Operations)"></a>
-# String Operations:
+# 9. String Operations:
 
 - **df['column'].str.upper()**: Elevate all letters to uppercase!
 - **df['column'].str.contains()**: Unearth patterns in text with df['column'].str.contains().
@@ -531,7 +534,7 @@ Dalam Pandas, terdapat beberapa metode untuk menggabungkan atau menggabungkan du
 - **df['column'].str.cat(sep='separator')**: Concatenate strings within a column, separated by a specified separator.
 
 <a name="Datetime-Operations"></a>
-# Datetime Operations:**
+# 10. Datetime Operations:
 - **df['column'].dt.year**: Peek at the year effortlessly from a datetime column.
 - **df['column'].dt.month**: Dip your fingers to unearth the month from datetime data.
 - **df['column'].dt.day**: Extracts the day component from the datetime column.
@@ -695,7 +698,7 @@ print(leap_year_df[['Nama', 'Tanggal_Lahir', 'Tahun_Kabisat']])
 - `df['string_column'] = df['string_column'].astype(str)`
 
 <a name="Format-Method"></a>
-# **Format Method**
+# 11. Format Method
 
 ### Example 1:
 
@@ -742,7 +745,7 @@ Summary of 'Category' Column:
 #### Output:
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/d1020dde-4b36-4433-8f97-f16a4faf971e)
 
----
+
 ### Example 2:
 
 Apologies for any confusion. It seems there was a mistake in the previous response. Here's the corrected output for the more complex example:
