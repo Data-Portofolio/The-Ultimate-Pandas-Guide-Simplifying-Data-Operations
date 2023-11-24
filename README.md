@@ -28,6 +28,13 @@ Welcome to My repository! This comprehensive guide serves as your key to masteri
 
 Pandas is a go-to library for data manipulation, analysis, and transformation. However, its rich set of functions can be intimidating for beginners. This guide is designed to make your journey with Pandas both accessible and enjoyable. It offers a hands-on approach, packed with practical tips, tricks, and real-world examples to help you become proficient in using Pandas for a wide range of tasks.
 
+# Table of Contents
+1. [ Make DataFrame ](#Make-DataFrame)
+2. [ Usage tips. ](#usa)
+3. [Format Method](#Format-Method)
+
+
+<a name="Make-DataFrame"></a>
 # Make DataFrame
 - `pd.DataFrame()`: function in Pandas allows you to create a DataFrame by specifying the data and various parameters. 
 
@@ -680,8 +687,9 @@ print(leap_year_df[['Nama', 'Tanggal_Lahir', 'Tahun_Kabisat']])
 - `df['numeric_column'] = pd.to_numeric(df['numeric_column'], errors='coerce')`
 - `df['boolean_column'] = df['boolean_column'].astype(bool)`
 - `df['string_column'] = df['string_column'].astype(str)`
-  
-## **Format Method**
+
+<a name="Format-Method"></a>
+# **Format Method**
 ======================
 ### Example 1:
 
