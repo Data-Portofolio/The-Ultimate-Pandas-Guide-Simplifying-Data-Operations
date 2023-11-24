@@ -117,7 +117,7 @@ print(df.head())
 <a name="Categorical-Data-Info"></a>
 # 4. Categorical Data Info:
 
-### **`df.unique()`**
+### 💡 `df.unique()`
 Metode ini digunakan untuk mendapatkan nilai unik dari suatu Series (kolom dalam DataFrame). Ini memberikan daftar nilai yang berbeda dari kolom tersebut.
 
 ```python
@@ -208,7 +208,7 @@ Unique values in 'Status' column:
        🥇 More Details about `df.iteritems()` & `enumerate`! 
     </summary>
    
-### `df.iteritems()`
+### 🌊 `df.iteritems()`
 
 `df.iteritems()` adalah metode pada Pandas untuk mengiterasi melalui kolom-kolom dalam DataFrame. Metode ini memberikan pasangan (nama_kolom, Series) untuk setiap kolom, memungkinkan akses ke nilai-nilai dalam kolom tersebut.
 
@@ -224,7 +224,7 @@ for nama_kolom, nilai_kolom in df.iteritems():
 
 Loop ini berjalan melalui setiap kolom DataFrame (`df`), mencetak nama kolom dan nilai kolom (sebagai objek Series). Dalam contoh ini, `nilai_kolom` berisi nilai-nilai kolom.
 
-### `enumerate`
+### 🌊 `enumerate`
 
 `enumerate` adalah fungsi Python yang memberikan indeks dan nilai saat mengiterasi melalui suatu iterable. Berguna untuk mendapatkan kedua informasi tersebut selama iterasi.
 
@@ -241,7 +241,7 @@ Secara keseluruhan, `df.iteritems()` digunakan untuk iterasi kolom-kolom, dan `e
 
 </details>
 
-### **`df.nunique()`**
+### 💡 `df.nunique()`
 Metode ini mengembalikan jumlah nilai unik dalam suatu Series. Ini memberikan informasi tentang seberapa bervariasinya data dalam kolom.
 
 #### Example:
@@ -268,7 +268,7 @@ Output:
 Number of unique values in 'Category' column: 3
 ```
     
-### **`df.value_counts()`**
+### 💡 `df.value_counts()`
 Metode ini menghitung frekuensi masing-masing nilai dalam suatu Series. Ini memberikan wawasan tentang seberapa sering masing-masing nilai muncul dalam data.
 
 #### Example:
