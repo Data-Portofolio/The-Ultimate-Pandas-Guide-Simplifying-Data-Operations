@@ -88,14 +88,15 @@ df = pd.read_csv(file_path, sep=';', skiprows=2, parse_dates=['Tanggal'], na_val
 # Menampilkan lima baris pertama dari DataFrame
 print(df.head())
 ```
-
-#### **_Penjelasan:_**
+<details>
+<summary align="right">🎀 Penjelasan</summary>
 
 >`sep=';'`: Menggunakan titik koma (`;`) sebagai delimiter dalam file CSV.
 >`skiprows=2`: Mengabaikan dua baris pertama dalam file CSV.
 >`parse_dates=['Tanggal']`: Mengonversi kolom 'Tanggal' menjadi tipe data datetime.
 >`na_values='Not Available'`: Menggantikan nilai 'Not Available' dengan nilai NaN untuk menangani nilai yang hilang.
 >`usecols=['Tanggal', 'Column1', 'Column2']`: Membatasi pembacaan hanya pada kolom-kolom yang disebutkan dalam daftar tersebut.
+</details>
 
 - **pd.read_excel()**: Bring the world of spreadsheets into your DataFrame with pd.read_excel().
 - **df.to_csv()**: Save your analysis results back to a shareable CSV format.
