@@ -789,4 +789,8 @@ Summary of 'Category' Column:
 #### Output:
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/874c7013-22d2-4b00-8e44-f98a73d31d1a)
 
-
+<p align="right">(<a href="#top">back to top</a>)</p>
+<h3>
+<p align="center">
+    :copyright: 2023 | A-Rahmawati </p>
+</h3>
