@@ -38,6 +38,8 @@ Pandas 🐼 is a go-to library for data manipulation, analysis, and transformati
 5. [Data Selection](#Data-Selection)
 <details>
    <summary>📌 More...</summary>
+<br>
+   
 6. [Data Manipulation](#Data-Manipulation)
 7. [Aggregation and Grouping](#Aggregation-and-Grouping)
 8. [Merging and Joining](#Merging-and-Joining)
