@@ -36,6 +36,8 @@ Pandas 🐼 is a go-to library for data manipulation, analysis, and transformati
 3. [Info and Statistics](#Info-and-Statistics)
 4. [Categorical Data Info](#Categorical-Data-Info)
 5. [Data Selection](#Data-Selection)
+<details>
+   <summary>📌 More...</summary>
 6. [Data Manipulation](#Data-Manipulation)
 7. [Aggregation and Grouping](#Aggregation-and-Grouping)
 8. [Merging and Joining](#Merging-and-Joining)
@@ -45,7 +47,7 @@ Pandas 🐼 is a go-to library for data manipulation, analysis, and transformati
 12. [Data Type Conversion](#Data-Type-Conversion)
 13. [Format Method](#Format-Method)
 14. [Apply & Lambda](#Apply-&-Lambda)
-
+</details>
 
 <a name="Make-DataFrame"></a>
 # 1. Make DataFrame 
