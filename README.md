@@ -1,6 +1,6 @@
 
 <h1 align="center">
-<p align="center">  The Ultimate Pandas Guide: Simplifying Data Operations
+<p align="center">  The Ultimate Pandas Guide:Simplifying Data Operations
    
 <br>
     <br>
