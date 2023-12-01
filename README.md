@@ -474,7 +474,7 @@ print(merged_df)
 
 ### 🎎 **`concat`:**
    - `concat` digunakan untuk menggabungkan DataFrames secara vertikal (menambahkan baris) atau secara horizontal (menambahkan kolom).
-   - Secara default, `concat` melakukan penggabungan secara vertikal (axis=0).
+   - Secara default, `concat` melakukan penggabungan secara vertikal/bawah (axis=0) dan secara horizontal/samping (axis=1).
 <details>
 <summary align="center" >🔥 Example</summary>
 
