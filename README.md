@@ -75,6 +75,36 @@ print(df)
 ```
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/44e51992-b36b-4a8d-93af-6436d597301a)
 
+<details><summary>pd.set_option()</summary>
+   <br>
+Anda telah memberikan contoh kode yang baik untuk menambahkan opsi pengaturan lainnya menggunakan `pd.set_option()` dalam pandas. Dengan menambahkan opsi-opsi ini, Anda dapat mengontrol tampilan dan perilaku output pandas sesuai dengan preferensi Anda.
+
+```python
+# Menambah jumlah maksimum baris yang ditampilkan
+pd.set_option('display.max_rows', 1000)
+
+# Menambah jumlah maksimum kolom yang ditampilkan
+pd.set_option('display.max_columns', 100)
+
+# 1. Presisi angka desimal
+pd.set_option('display.precision', 2)
+
+# 2. Lebar kolom
+pd.set_option('display.max_colwidth', 50)
+
+# 3. Presisi datetime
+pd.set_option('display.date_format', '%Y-%m-%d')
+
+# 4. Floating-point formatting
+pd.set_option('display.float_format', '{:.2f}'.format)
+
+# 5. Menyembunyikan index
+pd.set_option('display.show_index', False)
+```
+
+Dengan menyesuaikan pengaturan sesuai dengan kebutuhan Anda, Anda dapat meningkatkan pengalaman bekerja dengan DataFrame pandas. Terima kasih telah memberikan contoh lengkap!                                    
+</details>
+
 <a name="Read-and-Write-Data"></a>
 # 2. Read and Write Data 👀
 
