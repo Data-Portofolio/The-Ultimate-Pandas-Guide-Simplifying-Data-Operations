@@ -574,6 +574,9 @@ In this version, `df2[['C', 'D']]` is used to select only the 'C' and 'D' column
     'Horror Movies'], "other")
    short_movies.sample(10)
 ```
+**Output:**
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/17cab2dc-76c8-4f6b-832d-379214ed5028)
+
 </details>
 <a name="String-Operations)"></a>
 
