@@ -559,6 +559,21 @@ In this version, `df2[['C', 'D']]` is used to select only the 'C' and 'D' column
 # 9. Data Filling and Replacement:
 - `df.fillna()`: Fill missing values with policies you define.
 - `df.replace(to_replace, value)`: Replace values with new ones as per your requirements.
+  
+   <details><summary>Example:</summary></details>
+
+  ```phyton
+     short_movies['genre'] = short_movies['genre'].replace(['Uncategorized',
+    'Comedies',
+    'Dramas',
+    'International Movies',
+    'Action',
+    'Music',
+    'Classic Movies',
+    'Anime Features',
+    'Horror Movies'], "other")
+   short_movies.sample(10)
+  ```
 
 <a name="String-Operations)"></a>
 # 10. String Operations
