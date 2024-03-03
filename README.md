@@ -560,10 +560,10 @@ In this version, `df2[['C', 'D']]` is used to select only the 'C' and 'D' column
 - `df.fillna()`: Fill missing values with policies you define.
 - `df.replace(to_replace, value)`: Replace values with new ones as per your requirements.
   
-   <details><summary>Example:</summary></details>
+<details><summary>Example:</summary>
 
-  ```phyton
-     short_movies['genre'] = short_movies['genre'].replace(['Uncategorized',
+```python
+   short_movies['genre'] = short_movies['genre'].replace(['Uncategorized',
     'Comedies',
     'Dramas',
     'International Movies',
@@ -573,9 +573,10 @@ In this version, `df2[['C', 'D']]` is used to select only the 'C' and 'D' column
     'Anime Features',
     'Horror Movies'], "other")
    short_movies.sample(10)
-  ```
-
+```
+</details>
 <a name="String-Operations)"></a>
+
 # 10. String Operations
 
 - **df['column'].`str.upper()`**: Elevate all letters to uppercase!
