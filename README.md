@@ -1061,10 +1061,43 @@ df['Salary_Category'] = df['Salary'].apply(lambda x: 'High' if x >= 60000 else '
 # Display the DataFrame
 print(df)
 ```
-
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/54b1a582-8624-4de5-9ca8-ced798c2aa09)
 
-     
+### 8. Iterrows
+
+Metode .iterrows() adalah metode yang digunakan dalam pandas untuk melakukan iterasi melalui baris-baris DataFrame. Ini menghasilkan generator yang menghasilkan indeks baris bersama dengan data baris sebagai Series.
+
+```python
+import matplotlib.pyplot as plt
+
+colors = []
+labels = []
+
+for _, row in netflix_movies.iterrows():
+    if row['genre'] == 'Children':
+        colors.append('red')
+        labels.append('Children')
+    elif row['genre'] == 'Documentaries':
+        colors.append('blue')
+        labels.append('Documentaries')
+    elif row['genre'] == 'Stand-Up':
+        colors.append('green')
+        labels.append('Stand-Up')
+    else:
+        colors.append('black')
+        labels.append('Other')
+
+fig = plt.figure(figsize=(12, 8))
+plt.scatter(netflix_movies['release_year'], netflix_movies['duration'], c=colors, label=labels)
+
+plt.xlabel("Release Year")
+plt.ylabel('Duration')
+plt.legend()  # Added legend to show color labels
+plt.show()
+```
+
+Dengan menambahkan label, sekarang plot akan menampilkan legenda yang menjelaskan warna-warna yang digunakan untuk mewakili setiap genre.
+    
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <p align="center">
