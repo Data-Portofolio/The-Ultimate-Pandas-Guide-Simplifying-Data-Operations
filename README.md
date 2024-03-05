@@ -1155,7 +1155,7 @@ plt.show()
 answer = "no"
 ```
 
-### Output:
+## Output:
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/f593a618-36c5-48cd-81e6-16aed8695c27)
 
 </details>
