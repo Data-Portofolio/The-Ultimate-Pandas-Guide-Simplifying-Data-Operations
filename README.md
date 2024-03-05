@@ -1098,6 +1098,8 @@ plt.show()
 
 Dengan menambahkan label, sekarang plot akan menampilkan legenda yang menjelaskan warna-warna yang digunakan untuk mewakili setiap genre.
 
+### CASE STUDY
+
 <details><summary>Case Study 1: Netflix Movie Data Camp</summary>
 
 ```python
