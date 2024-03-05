@@ -1098,7 +1098,7 @@ plt.show()
 
 Dengan menambahkan label, sekarang plot akan menampilkan legenda yang menjelaskan warna-warna yang digunakan untuk mewakili setiap genre.
 
-<details>
+<details><summary>Case Study 1: Netflix Movie Data Camp</summary>
 
 ```python
 
@@ -1152,6 +1152,10 @@ plt.show()
 # Are we certain that movies are getting shorter?
 answer = "no"
 ```
+
+### Output:
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/f593a618-36c5-48cd-81e6-16aed8695c27)
+
 </details>
     
 <p align="right">(<a href="#top">back to top</a>)</p>
