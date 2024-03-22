@@ -1159,6 +1159,9 @@ answer = "no"
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/f593a618-36c5-48cd-81e6-16aed8695c27)
 
 </details>
+
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/688aafb1-3c6d-4e88-84be-ae1fc93267f3)
+
     
 <p align="right">(<a href="#top">back to top</a>)</p>
 
