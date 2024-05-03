@@ -492,13 +492,14 @@ print(df_from_csv)
 - `df.reset_index()`: Reset the index and reorganize your DataFrame to its original state.
 - `df.sort_values()`: Use sort_values() to arrange data as you desire.
 
-```phyton
+```python
 # Sort homelessness by region, then descending family members
 homelessness_reg_fam = homelessness.sort_values(["region", "family_members"], ascending=[True, False])
 
 # Print the top few rows
 print(homelessness_reg_fam.head())
 ```
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <a name="Aggregation-and-Grouping"></a>
