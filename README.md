@@ -1103,6 +1103,36 @@ Dengan menambahkan label, sekarang plot akan menampilkan legenda yang menjelaska
 <details><summary>Case Study 1: Netflix Movie Data Camp</summary>
 
 ```python
+# Print the head of the homelessness data
+print(homelessness.head())
+
+# Print information about homelessness
+print(homelessness.info())
+
+# Print the shape of homelessness
+print(homelessness.shape)
+
+# Print a description of homelessness
+print(homelessness.describe())
+
+```
+
+```python
+# Import pandas using the alias pd
+import pandas as pd
+
+# Print the values of homelessness
+print(homelessness.values)
+
+# Print the column index of homelessness
+print(homelessness.columns)
+
+# Print the row index of homelessness
+print(homelessness.index)
+```
+
+
+```python
 
 # Importing pandas and matplotlib
 import pandas as pd
