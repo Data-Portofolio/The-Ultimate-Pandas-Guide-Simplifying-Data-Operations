@@ -344,6 +344,29 @@ D: 1
 
 - `df['column']`: Pick and extract the necessary column from the DataFrame.
 - `df[['column1', 'column2']]`: Bundle your data by selecting multiple columns at once.
+  
+ ### Simple Subset
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/72930bf9-b61e-4b6a-812a-347afa4e1c81)
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/093be7f9-8138-4832-a433-31b4922ab249)
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/34b6619c-eae1-4140-ade4-6254672e536c)
+
+### Subset with Logical
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/76bc501d-c311-4a0c-b4e2-d549f5411482)
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/03bc113c-4091-43db-b7e3-a423988aa382)
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/9f9695b9-700f-4210-9127-11733e8f1b6d)
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/5727a4da-ba3b-4b4f-af37-68a4554507c8)
+
+### Subset Multiple Condition
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/8e905ab9-217f-449b-b9f3-450d8ab638dd)
+
+### Subset with .isin()
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/20e81ff6-2211-46f0-84c1-a8fb50349420)
+
+
+
+
+
+
 
 <details>
 <summary align="center">🔥 Example</summary>
