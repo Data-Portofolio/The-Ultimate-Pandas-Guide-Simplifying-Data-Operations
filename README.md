@@ -1224,6 +1224,11 @@ answer = "no"
 
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/688aafb1-3c6d-4e88-84be-ae1fc93267f3)
 
+
+
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/e7bdb241-6e73-4e5b-a752-5c004ff2acaa)
+
+
     
 <p align="right">(<a href="#top">back to top</a>)</p>
 
