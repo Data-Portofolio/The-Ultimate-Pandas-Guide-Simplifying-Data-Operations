@@ -1230,6 +1230,14 @@ answer = "no"
 
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/c13fd896-3de4-4c66-a95d-6ae3af1e4e2e)
 
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/76762fcd-051e-4528-b97a-22c434591464)
+
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/1d828dfc-01c2-4a49-a07f-270642fc8e4d)
+
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/12522376-f5ff-4ef5-a414-de61b0e88d90)
+
+### OUTPUT:
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/c2405109-c525-417e-bac8-ccd519bf5497)
 
     
 <p align="right">(<a href="#top">back to top</a>)</p>
