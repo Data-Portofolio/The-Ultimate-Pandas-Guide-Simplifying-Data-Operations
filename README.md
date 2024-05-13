@@ -310,6 +310,11 @@ Number of unique values in 'Category' column: 3
 ### 💡 `df.value_counts()`
 Metode ini menghitung frekuensi masing-masing nilai dalam suatu Series. Ini memberikan wawasan tentang seberapa sering masing-masing nilai muncul dalam data.
 
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/7d3a1c3d-91f1-4f8f-b6c0-72e405219da8)
+
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/c790d96a-e99e-4c36-9f7c-872ba6f5986b)
+
+
 #### Example:
 
 ```python
@@ -487,6 +492,10 @@ print(df_from_csv)
 # 6. Data Manipulation:
 
 - `df.drop()`: Easily remove unwanted columns or rows.
+- `df.drop_duplcates()`
+   ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/5f8b723e-88da-4f11-abbe-98fc2d9b3bc5)
+
+  
 - `df.rename()`: Personalize your DataFrame by changing column or index names.
 - `df.set_index()`: Give your DataFrame the index that suits you.
 - `df.reset_index()`: Reset the index and reorganize your DataFrame to its original state.
@@ -1224,8 +1233,6 @@ answer = "no"
 
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/688aafb1-3c6d-4e88-84be-ae1fc93267f3)
 
-
-
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/e7bdb241-6e73-4e5b-a752-5c004ff2acaa)
 
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/c13fd896-3de4-4c66-a95d-6ae3af1e4e2e)
@@ -1234,12 +1241,20 @@ answer = "no"
 
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/1d828dfc-01c2-4a49-a07f-270642fc8e4d)
 
+## Exampple
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/12522376-f5ff-4ef5-a414-de61b0e88d90)
 
 ### OUTPUT:
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/c2405109-c525-417e-bac8-ccd519bf5497)
 
-    
+## Example
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/a4dfc12e-ffed-4060-bb42-a8bacecfb3fe)
+
+### OUTPUT:
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/68aee280-b0f1-4a8c-b23c-2af30bd090ab)
+
+
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <p align="center">
