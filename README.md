@@ -1361,6 +1361,23 @@ answer = "no"
 - ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/eb7fab4c-04c5-4226-ab35-fbb9f74cbd21)
 
 
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/b96fa151-435d-4d9a-9dee-c2b2e4776eae)
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/69f16887-1089-4d6c-ae71-b8524f3223f6)
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/cba6cd45-0873-4e3f-9e27-a22b4db43aa0)
+
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/5e646879-337c-4a77-8017-b91228c89e0a)
+
+
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/88361923-7535-4261-9166-0758f6afbf1c)
+
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/a261e167-89f4-44cb-8065-530059f62615)
+
+
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/1c6287c5-cd47-4509-9e6b-c1b8e28d43f3)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
