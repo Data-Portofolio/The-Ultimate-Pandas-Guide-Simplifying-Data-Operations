@@ -1379,6 +1379,29 @@ answer = "no"
 
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/1c6287c5-cd47-4509-9e6b-c1b8e28d43f3)
 
+### Example:
+
+ - ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/18ff388d-b1d1-49e5-a705-01b373f32c4a)
+
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/79995f7d-8afa-439d-8f90-1f2b8c1edd6e)
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/10430646-43d9-4c7d-b485-6a1174099499)
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/ecb24653-b84b-4262-9bb2-ea09cedb7488)
+
+# Dataframes
+
+## List Dicts by Row
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/7575ff4e-cb1f-4587-b028-b2eb514b81c0)
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/e9140db3-f96a-4a5c-b67c-452ae43cdb61)
+
+## List Dicts by Column
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/6cbcf597-382a-47c5-9230-15a091ed10df)
+
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
