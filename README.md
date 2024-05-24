@@ -1638,12 +1638,87 @@ answer = "no"
 
 # SEABORN (pandas + matplotlib) --> https://seaborn.pydata.org/
 
-![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/1789830e-438a-4e3b-bbe0-87d24293680c)
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/b4e864c7-f9d2-4559-b6a1-123a7183505e)
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/1789830e-438a-4e3b-bbe0-87d24293680c)
+
+## Countplot
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/4ba8d441-5d14-4985-8e82-86f2ee1e0f7c)
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/33bacba1-0e00-47e2-a50b-c9cbb2312d6d)
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/d6e34d43-ce99-4926-b798-03268c262f84)
+
+## Relplot
+### scattter Plot
+-![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/ad5ad892-897b-42c2-b28c-3cda48311536)
+
+-![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/6c69acfd-45b4-414a-87cc-bef1fa4e98f5)
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/c3b64ca1-9792-4a02-a546-320113b01cb3)
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/9ac95721-78de-4f01-9cce-bd8f269c0104)
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/25e6251c-a7fb-4cb2-a0c3-4ed2be40be3b)
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/e6fd4131-f95b-4235-ab0d-0533fc6fa118)
+
+#### Customize scatter
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/f018a20b-75c1-4004-a1c4-42a5579a8eaf)
+  
+#### Quantitative 
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/5d090dda-a867-45a1-8d54-cd2d0870f25f)
+-  ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/b993fa67-8951-4696-b000-ad354a38f3c7)
+ 
+#### Categorize
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/f874ae44-8381-4d47-bb99-f1e994bff0d8)
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/9393e17c-641e-4556-b46f-0b5ce4f21128)
+  
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/04bf2f67-e310-4a91-aa1b-f730b0d036c1)
+
+### Line PLot
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/52666d5f-9824-4974-a5d6-4255afc01d0a)
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/017c7639-bfc6-4e4b-a4f7-7711316fd918)
+
+## Catplot
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/b23460af-1095-4f22-b277-41f21fac9cc5)
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/0e1a3827-6576-4ca9-9b77-d4ac0fd1ae47)
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/5b967ccc-ba91-4b7d-9a48-f4d68bc01249)
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/33126525-5357-4e2e-8f9e-cde0f6c49b16)
+
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/36f9d5ce-4686-4ab2-a64c-5e94ff7a1929)
+
+## Boxplot
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/c7168f11-d2f5-41f8-b67f-bb61f07c4d51)
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/0e23d7a9-2437-40ab-984d-ec0962f1280a)
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/d49d995f-1137-4995-8e07-21cf247c97f6)
+
+# Color Pallete
+## Color
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/fac5ed37-0200-486d-9a95-95dc863588fc)
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/ae7d3b05-f00b-447d-8d76-c2179798670e)
+
+## Sequential
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/6cef0bf2-9b88-4baa-be10-f210d6d88d57)
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/e436d83d-6152-46f5-8ad5-86daa2f69f32)
+
+## set scale
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/2d6dad15-e3e1-4cf8-a629-119c0ff1c4a5)
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/78773c98-6878-45d2-beb9-190e10107fdb)
 
 
 
+# 
+##  FacetGrid vs. AxesSubplot objects
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/c13db333-4838-492c-92c0-37cd823d8975)
 
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/c8b62085-6e3f-4faa-8214-c97aa29bb65a)
 
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/52aea95f-89c1-4f3b-9255-66ae05100228)
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/a6d89983-2bf6-4dd5-9647-55f6fea7124a)
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/a6e1ad03-29d4-4fe1-99e6-1745e35ea443)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
