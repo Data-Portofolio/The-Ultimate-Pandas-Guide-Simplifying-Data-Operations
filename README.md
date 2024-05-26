@@ -1792,22 +1792,23 @@ answer = "no"
 - ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/31ff02f2-b98e-4733-bfbe-409dd35f2895)
 
 
-# Outliers
+## Outliers
 
-## IQR
+### IQR
   ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/d7c7f215-017a-4d6b-abb2-f8d60a55901c)
 
   - ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/97035a00-6fad-45cd-8c50-ab66c044f9e5)
   - ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/d0ee72d1-acb4-489a-9aae-1c3885926d26)
   - ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/f45b4ca4-0b13-42b1-9576-b698114cf2eb)
 
-## Subset
+### Subset
 ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/fa39dbc6-2f78-465f-981e-5b396dc9cb95)
 
-## Important to Handle outlier
+### Important to Handle outlier
 - ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/fa693cc6-d901-42be-b5a9-ae42b55ea917)
 - ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/3f6e769a-9ae9-4155-b279-e4278d3bd284)
-- Before vs After
+
+#### Before vs After Handle outlier
   ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/79e43147-ebc1-46f6-a0fa-be027b073308)
 
 
