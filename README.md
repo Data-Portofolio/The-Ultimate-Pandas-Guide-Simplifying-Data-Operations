@@ -1721,6 +1721,97 @@ answer = "no"
 - ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/a6e1ad03-29d4-4fe1-99e6-1745e35ea443)
 
 
+# EDA
+
+## Missing Value 
+
+### Why?
+
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/2844d266-b1f4-4eb9-8bf2-8f3c451d0aaa)
+
+### Strategi
+
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/a6d4e3d5-c25b-45d2-bee5-295f0468991e)
+
+### 1. Drop Miss Value
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/367b920b-0129-42bc-a586-82376b0731af)
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/980fc967-4547-46a0-bc78-8648d3e9ca0a)
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/ed444cdb-0095-45f2-a207-e33b8173fd6a)
+
+### 2. Imputing Miss Value
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/ac390d6a-d6a8-4d60-bd82-6538a9e9bab4)
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/c93d7a91-f2ef-42de-a92a-f5d3d4fbf26c)
+
+### 3. Imputing Sub-Grup
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/38640c66-1bbc-4052-b932-8f2a5fb273bf)
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/25931a55-92d0-43df-b217-fcec8e132e0a)
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/6e66c58d-c6ab-4585-adee-459ea673ecb4)
+
+## Working with Categorical data
+### preview
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/bd965c96-741d-40ef-be66-3d54d185ca3d)
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/b95c16f6-6856-4760-9cab-6f51053770d4)
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/86ddad28-b72d-4e5b-ae2f-eeee679a1e18)
+
+### Analissi Categorical Data
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/695a114a-80cb-4be4-9e26-9b256b0062e9)
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/8f2329fd-0470-496c-8172-fc23626b26d0)
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/82b5a72f-9daf-4605-9d6e-74c72f530a56)
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/0f03f5bd-db44-447c-b259-92fb0b1d3168)
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/94585856-e828-4ebc-a805-bd731e153f51)
+
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/bc747ee9-31ca-44ff-8bcf-7194bc620ade)
+
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/4238032e-f60c-4ca2-a1ff-db9bcffbc904)
+
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/7a9f3052-10e0-4433-aa56-7651ee36c2f0)
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/06e765dd-3b31-44a7-8669-68911a3e376c)
+
+-  ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/4840efe8-b4fc-496e-97af-4a8f9b96ac0e)
+   ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/15b97243-8463-49f9-83e8-4005812a91d2)
+   ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/3229bb65-14ab-499a-91cb-82fb49173cd1)
+
+
+## Working with Categorical data
+### Converting string to number
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/5669c9d0-9099-4f8f-acb5-8a9279ef0a3d)
+-  ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/5f2e38aa-2466-450b-a40c-91829844e90e)
+
+-  ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/2c50c714-49f1-4207-8e47-f8aa2e074788)
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/74a9031d-9ddf-40fb-ad8a-5855f907c52b)
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/31ff02f2-b98e-4733-bfbe-409dd35f2895)
+
+
+# Outliers
+
+## IQR
+  ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/d7c7f215-017a-4d6b-abb2-f8d60a55901c)
+
+  - ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/97035a00-6fad-45cd-8c50-ab66c044f9e5)
+  - ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/d0ee72d1-acb4-489a-9aae-1c3885926d26)
+  - ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/f45b4ca4-0b13-42b1-9576-b698114cf2eb)
+
+## Subset
+![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/fa39dbc6-2f78-465f-981e-5b396dc9cb95)
+
+## Important to Handle outlier
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/fa693cc6-d901-42be-b5a9-ae42b55ea917)
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/3f6e769a-9ae9-4155-b279-e4278d3bd284)
+- Before vs After
+  ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/79e43147-ebc1-46f6-a0fa-be027b073308)
+
+
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <p align="center">
