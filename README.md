@@ -1722,6 +1722,7 @@ answer = "no"
 
 
 # EDA
+
 ## Data Cleaning and Imputation
 Exploring and analyzing data often means dealing with missing values, incorrect data types, and outlier.
 
@@ -1813,9 +1814,33 @@ Exploring and analyzing data often means dealing with missing values, incorrect 
 ##### Before vs After Handle outlier
   ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/79e43147-ebc1-46f6-a0fa-be027b073308)
 
+#####  pd.cut()
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/bd61a44e-ade5-4116-a8aa-686193d1c116)
 
+  ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/ef8e5e2c-27df-4960-a322-1b6008dcd319)
 
+## RECAP
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/6b85991c-4f00-4582-9b68-4ee9b9f51206)
+  
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/ef21a6f0-72d0-4577-906e-01f2439d0e6a)
+  
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/3ee27a68-340f-4810-b976-72e1ea87c7a1)
+  ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/8454ffe1-b13d-4244-9d19-67d2b0d9540c)
 
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/aeba5247-4898-43a4-bc0b-c36fe33da7b8)
+  
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/1578d369-5097-4665-a358-64eb0b4b4126)
+  
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/0eb3de82-df13-4d6c-9a43-e9db5c7b54bd)
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/7ad79602-e27c-49aa-912b-d00f762e6cf5)
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/d1d515f1-6bd8-4c21-afec-872951e82335)
+
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/73eddbfc-2984-4b5b-8589-02d14b48e74e)
+  
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/ac3b772f-5edd-4e08-beff-2380518df16e)
+- ![image](https://github.com/Data-Portofolio/The-Ultimate-Pandas-Guide-Simplifying-Data-Operations/assets/133883292/657fedb9-bf60-47af-9e6a-e6b70039a8a5)
 
 
 
